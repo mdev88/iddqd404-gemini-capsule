@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>gemini://texto-plano.xyz/iddqd404/blog/</id>
+  <title>blog</title>
+  <updated>2023-10-03T18:01:53.906451+00:00</updated>
+  <link href="gemini://texto-plano.xyz/iddqd404/blog/atom.xml" rel="self"/>
+  <link href="gemini://texto-plano.xyz/iddqd404/blog/" rel="alternate"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/primer post.gmi</id>
+    <title>Primer post</title>
+    <updated>2023-10-03T18:01:36.859785+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/primer post.gmi" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/segundo post.gmi</id>
+    <title>Primer post</title>
+    <updated>2023-10-03T18:01:53.906451+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/segundo post.gmi" rel="alternate"/>
+  </entry>
+</feed>
