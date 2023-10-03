@@ -1,0 +1,21 @@
+### ¿Cómo decidir qué hacer con una computadora en desuso?
+
+Soy entusiasta del "distro hopping" y me gusta instalar distintos sistemas operativos en computadoras viejas o en desuso (a veces también en uso) simplemente porque si, porque soy un maldito nerd. DEAL WITH IT.
+
+Muchas veces me encuentro con un dilema: 
+
+> "¿La preparo para intentar usarla en tareas cotidianas actuales o le instalo un OS y aplicaciones de su época y la dejo como una compu "retro" que funcione como una captura en el tiempo de su época, aunque esto implique que ya no pueda usarse para algunas cosas de la actualidad"
+
+Intento pensar en reglas o criterios que me ayuden a decidir más automáticamente, pero no logro llegar a ninguna conclusión satisfactoria. Siempre termino decidiendo algo distinto para cada caso en particular. Es más, muchas veces cambio de opinión y vuelvo a reinstalar una cosa distinta en la misma máquina en el transcurso de algunos meses.
+
+¿Dar siempre prioridad a la usabilidad?
+
+> "Si una compu se puede usar para algo productivo, se tiene que usar para ese fin hasta que ya no lo pueda hacer más."
+
+Esta postura a veces me lleva a algunos extremos a la hora de elegir distribuciones de Linux ultra minimalistas, elegir cuidadosamente las aplicaciones más livianas, optimizar cada recurso al máximo para sacarle el jugo lo más posible a la poca memoria o capacidad del procesador, etc, y a veces los resultados son apenas aceptables.
+
+¿Hasta qué punto también vale considerar cosas como la conservación de los sistemas operativos, el software y el hardware como una razón válida? ¿Y la nostalgia?
+
+> "Esta compu sufre demasiado cuando intenta abrir una web con javascript, mejor le instalo un OS antiguo (de la misma época a la cuál pertenece el hardware), y la dejo como una pieza de museo, una diapositiva de un momento de la historia de la computación preservado en el tiempo"
+
+Esta posición me lleva por caminos que disfruto mucho, me hace recordar y revisitar otras épocas olvidadas y me trae muchas satisfacciones, pero también es cierto que una vez que la máquina queda preparada, se convierte en una pieza de admiración y colección, y a veces me acecha un poco la culpa pensar que yo o alguien más quizás le hubiera podido dar algún uso práctico aunque sea por 1 o 2 años más.
