@@ -1,9 +1,9 @@
-# iddqd404 
+# iddqd404
 
 Contacto: mvpub @rroba pm.me
 
 ## Gemlog
 
-Gemlog personal en donde escribo sobre mis experimentos con tecnología, retrogaming y retrocomputación, y un poco de ficción también.
+Gemlog personal en donde escribo sobre mis experimentos con tecnología, retrogaming, retrocomputación, y un poco de ficción en forma de micro-relatos.
 
 => gemini://texto-plano.xyz/iddqd404/blog/atom.xml Gemlog (Feed Atom)
