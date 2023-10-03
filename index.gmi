@@ -2,4 +2,4 @@
 
 Contacto: mvpub @rroba pm.me
 
-=> gemini://texto-plano.xyz/blog/atom.xml Blog
+=> gemini://texto-plano.xyz/iddqd404/blog/atom.xml Blog
