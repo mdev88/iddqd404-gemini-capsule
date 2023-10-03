@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>gemini://texto-plano.xyz/iddqd404/blog/</id>
   <title>iddqd404</title>
-  <updated>2023-10-03T18:23:15.573104+00:00</updated>
+  <updated>2023-10-03T18:26:28.883102+00:00</updated>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/atom.xml" rel="self"/>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/" rel="alternate"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
   <subtitle>Blog en texto-plano.xyz/iddqd404</subtitle>
   <entry>
-    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-como decidir.gmi</id>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-como_decidir.gmi</id>
     <title>¿Cómo decidir qué hacer con una computadora en desuso?</title>
-    <updated>2023-10-03T18:23:15.573104+00:00</updated>
-    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-como decidir.gmi" rel="alternate"/>
+    <updated>2023-10-03T18:26:28.883102+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-como_decidir.gmi" rel="alternate"/>
   </entry>
 </feed>
