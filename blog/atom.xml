@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>gemini://texto-plano.xyz/iddqd404/blog/</id>
-  <title>blog</title>
+  <title>Blog de iddqd404</title>
   <updated>2023-10-03T18:01:53.906451+00:00</updated>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/atom.xml" rel="self"/>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/" rel="alternate"/>
