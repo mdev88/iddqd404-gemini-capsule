@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Generando atom.xml..."
-../gemfeed/gemfeed.py -b gemini://texto-plano.xyz/iddqd404/blog -d ./blog/ -t "iddqd404" -s "Blog en texto-plano.xyz/iddqd404"
+../gemfeed/gemfeed.py -b gemini://texto-plano.xyz/iddqd404/blog -d ./blog/ --mtime -t "iddqd404" -s "Blog en texto-plano.xyz/iddqd404"
 echo ""
 
 echo "Haciendo push al repositorio..."
