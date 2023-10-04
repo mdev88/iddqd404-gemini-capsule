@@ -2,8 +2,8 @@
 
 Contacto: mvpub @rroba protonmail.com
 
-## Gemlog
+## Genlog
 
-Gemlog personal en donde escribo sobre mis experimentos con tecnología, retrogaming, retrocomputación, y un poco de ficción en forma de micro-relatos.
+Genlog personal en donde escribo sobre mis experimentos con tecnología, retrogaming, retrocomputación, y un poco de ficción en forma de micro-relatos.
 
-=> gemini://texto-plano.xyz/iddqd404/blog/atom.xml Gemlog (Feed Atom)
+=> gemini://texto-plano.xyz/iddqd404/blog/atom.xml Genlog (Feed Atom)
