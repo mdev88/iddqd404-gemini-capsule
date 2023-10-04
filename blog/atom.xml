@@ -6,7 +6,7 @@
   <link href="gemini://texto-plano.xyz/iddqd404/blog/atom.xml" rel="self"/>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/" rel="alternate"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
-  <subtitle>Blog en texto-plano.xyz/iddqd404</subtitle>
+  <subtitle>Gemlog de iddqd404. Home en texto-plano.xyz/iddqd404</subtitle>
   <entry>
     <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-hackfun.gmi</id>
     <title>¿Qué es Hackfun?</title>
