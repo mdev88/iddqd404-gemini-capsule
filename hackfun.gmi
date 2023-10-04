@@ -1,0 +1,51 @@
+# Estaba aburrido, así que fundé un hackerspace en mi ciudad
+
+Esta es una brevísima crónica de un proyecto personal que recientemente cumplió 4 años de vida.
+
+4 años atrás, cansado de no encontrar eventos o espacios que me interesaran en mi ciudad (Rosario, Argentina), decidí dar el primer paso hacia la creación de un hackerspace, algo que desde hacía muchos años me resultaba sumamente interesante.
+
+> La idea del hackerspace empezó a ganar notoriedad (por lo menos a mis ojos) a principios del nuevo milenio y alcanzó bastante difusión en la primera década del mismo. 
+
+Decidí comenzar buscando a la gente, antes que el espacio físico, y hoy sé que ese fue el orden correcto. La comunidad es el componente fundamental, independientemente de si el lugar es grande o chico, está bien equipado o está vacío, o si directamente no existe un lugar físico. Creé un grupo en la plataforma Meetup (bajo el nombre "Hackfun") y comencé a publicar encuentros de distinto tipo, charlas, hackatones y cosas por el estilo.
+
+Siempre me atrajo la idea de crear un hackerspace, pero también fui muy consciente de la realidad de semejante emprendimiento. Muchos de los cientos de hackerspaces que florecieron en aquellos años de auge hoy ya ni siquiera existen. Es un hermoso sueño, pero la realidad ha demostrado que no es fácil cumplirlo y sostenerlo en el tiempo.
+
+> Un "hackerspace" es un lugar en donde gente de distintos ámbitos se encuentra y trabaja en proyectos colaborativos que combinan distintas disciplinas, materiales y objetivos. En ese lugar no sólo se generan cosas, sino también relaciones y vínculos, una comunidad de gente unida por la curiosidad, las ganas de crear cosas y por hacer algo diferente, en donde todo conocimiento es valioso, y donde aprender y enseñar son importantes por igual.
+
+Hoy sé que un hackerspace puede existir sin un espacio físico porque eso es precisamente lo que ocurrió con Hackfun. Fuimos una comunidad que comenzó lentamente a tomar forma, que tuvo altibajos en cuanto a la cantidad de miembros y a su actividad, pero que sobrevivió una pandemia y que en su último año de vida experimentó un enorme crecimiento y demuestra tener muy buena salud.
+
+En los primeros años, experimentamos con distintas plataformas para mantenernos comunicados y para dejar plasmados nuestros proyectos y nuestras ideas, con mayor o menor nivel de éxito. 
+Meetup, Telegram, Slack, Reddit... y seguramente me olvido de alguna.
+
+La única que sobrevivió casi desde el comienzo es Telegram, y sigue siendo nuestro principal canal de comunicación diario. Allí damos la bienvenida a la gente que se acerca para conocernos, y donde conversamos, nos organizamos y compartimos lo que nos interesa.
+
+Cuando la pandemia comenzó a menguar un poco, realizamos algunos encuentros presenciales en lugares semi abiertos o al aire libre, lo que nos ayudó a conocernos mejor, vernos las caras, y afianzarnos como una comunidad.
+
+Pero el cambio más grande estaría por venir a mediados de 2023, cuando conseguimos un espacio físico en un centro cultural llamado La Toma. Una sala en donde pudimos llevar muebles, llenarlos de nuestras herramientas y elementos de trabajo, y donde pudimos comenzar a juntarnos semanalmente. 
+
+A lo largo de nuestra humilde historia, hemos realizado actividades relacionadas con:
+
+- Programación
+- Seguridad informática
+- Reparación y reacondicionamiento de computadoras
+- Retrocomputación y retrogaming
+- Electrónica
+- Modelado e impresión 3D
+
+Y esto sólo es el comienzo. Tengo completa confianza de que todavía nos espera un largo futuro lleno de experimentación y diversión.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
