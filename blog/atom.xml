@@ -8,6 +8,12 @@
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
   <subtitle>Gemlog de iddqd404. Home en texto-plano.xyz/iddqd404</subtitle>
   <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-ejercicio1.gmi</id>
+    <title>Ejercicio 1</title>
+    <updated>2023-10-08T04:43:28.026645+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-ejercicio1.gmi" rel="alternate"/>
+  </entry>
+  <entry>
     <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-hackfun.gmi</id>
     <title>¿Qué es Hackfun?</title>
     <updated>2023-10-04T20:00:32.536612+00:00</updated>
