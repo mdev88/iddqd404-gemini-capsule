@@ -8,6 +8,12 @@
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
   <subtitle>Gemlog de iddqd404. Home en texto-plano.xyz/iddqd404</subtitle>
   <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-cartas.gmi</id>
+    <title>El olvidado oficio de enviar y recibir cartas</title>
+    <updated>2023-10-09T00:56:22.513271+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-cartas.gmi" rel="alternate"/>
+  </entry>
+  <entry>
     <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-ejercicio1.gmi</id>
     <title>Ejercicio de redacción - "Secuencia de apagado"</title>
     <updated>2023-10-08T04:47:05.876643+00:00</updated>
