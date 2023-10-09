@@ -7,9 +7,14 @@
 ▒▒ ▒▒   ▒▒ ▒▒   ▒▒ ▒▒    ▒▒ ▒▒   ▒▒ ▒▒▒▒▒▒▒ ▒▒ ▒▒ ▒▒ ▒▒▒▒▒▒▒ 
 ▓▓ ▓▓   ▓▓ ▓▓   ▓▓ ▓▓ ▄▄ ▓▓ ▓▓   ▓▓      ▓▓ ▓▓▓▓  ▓▓      ▓▓ 
 ██ ██████  ██████   ██████  ██████       ██  ██████       ██ 
+
 ```
 
-Contacto: mvpub @rroba protonmail.com
+
+## Contacto
+
+* Mastodon: @martindehf @rroba rebel.ar 
+* Email: mvpub @rroba protonmail.com
 
 ## Gemlog
 
