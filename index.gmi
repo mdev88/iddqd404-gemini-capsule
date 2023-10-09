@@ -4,6 +4,6 @@ Contacto: mvpub @rroba protonmail.com
 
 ## Gemlog
 
-Gemlog personal en donde escribo sobre mis experimentos con tecnología, retrogaming, retrocomputación, y un poco de ficción en forma de micro-relatos.
+Gemlog personal en donde escribo sobre mis experimentos con tecnología, retrogaming, retrocomputación, y un poco de ficción. Mi lema es "mejor publicado que perfecto", como una forma de combatir a mi perfeccionista interior, y evitar tener cientos de borradores casi perfectos.
 
 => gemini://texto-plano.xyz/iddqd404/blog/atom.xml Gemlog (Feed Atom)
