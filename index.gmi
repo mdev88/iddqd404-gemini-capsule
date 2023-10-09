@@ -1,5 +1,4 @@
-# iddqd404
-
+La cápsula de
 
 ```
 ░░ ░░░░░░  ░░░░░░   ░░░░░░  ░░░░░░  ░░   ░░  ░░░░░░  ░░   ░░ 
@@ -10,11 +9,14 @@
 
 ```
 
+# iddqd404
+
 
 ## Contacto
 
 * Mastodon: @martindehf @rroba rebel.ar 
 * Email: mvpub @rroba protonmail.com
+
 
 ## Gemlog
 
