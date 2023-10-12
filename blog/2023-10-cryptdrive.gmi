@@ -1,4 +1,4 @@
-# Cryptpad: Herramientas colaborativas online seguras y gratis
+# [Tecnología] Cryptpad: Herramientas colaborativas online seguras y gratis
 
 En Hackfun usábamos Notion para la documentación interna. Allí teníamos un par de hojas de cálculo o tablas para llevar registro del inventario de computadoras, las donaciones realizadas y ese tipo de cosas.
 
