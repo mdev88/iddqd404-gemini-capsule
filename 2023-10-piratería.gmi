@@ -1,0 +1,23 @@
+# Vuelta a la piratería. Día 0: El plan
+
+El advenimiento de los servicios de streaming y su comodidad y facilidad para acceder a contenidos se fue colando poco a poco en mi vida. Yo que era un ávido pirata, me terminó domando y convirtiendo en un docil consumidor.
+
+Y como últimamente me vengo sintiendo rebelde y combativo (?), decidí montar un servidor multimedia doméstico que me permita descargar contenido, y visualizarlo con sus subtítulos según corresponda, y posiblemente alguna que otra cosa más, pero inicialmente esta es mi idea:
+
+## Hardware
+
+Voy a usar una notebook Dell XPS 15 que tengo desde 2007 o 2008. Es una máquina con una pantalla enorme y es muy pesada, por lo que es un dolor transportarla. Sumado a su baja portabilidad, no tiene batería, y en los últimos años he intentado usarla como computadora de escritorio pero he tenido algunos problemas con el soporte del video, al punto de que a veces se cuelga por completo.
+Tiene un procesador i7 de primera generación y 8GB de ram, por lo que como servidor debería ser una topadora.
+
+Actualmente esa máquina tiene un disco de estado sólido que creo que voy a sacar para usar en otro lado, y le voy a poner un disco mecánico, ya que no creo que necesite tanto rendimiento de disco para lo que la voy a usar.
+Como almacenamiento adicional, tengo un disco externo que puedo configurar para las descargas y como carpeta para las series y películs de Jellyfin si hiciera falta.
+
+## Software
+
+La última semana estuve usando Jellyfin en mi computadora personal, y en muy poco tiempo me convenció de que es lo que quiero usar en el servidor. Es fácil de configurar, y el funcionamiento es excelente.
+
+Para la descarga de torrents todavía tengo que investigar las opciones disponibles. Sólo sé que quiero poder gestionar las descargas remotamente desde alguna interfaz web amigable, y poder programar los límites de velocidad por días y horarios.
+
+También me gustaría poder copiar fácilmente videos a través de carpetas compartidas por la red, pero tiene que funcionar muy bien, tanto desde Linux como Windows, y en mi experiencia esto siempre fue algo difícil de lograr.
+
+## 

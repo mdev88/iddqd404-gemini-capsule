@@ -1,0 +1,23 @@
+# Cryptpad: Herramientas colaborativas online seguras y gratis
+
+En Hackfun usábamos Notion para la documentación interna. Allí teníamos un par de hojas de cálculo o tablas para llevar registro del inventario de computadoras, las donaciones realizadas y ese tipo de cosas.
+
+Decidimos abandonar Notion porque es una plataforma cerrada, que además es muy demandante en cuanto a recursos del lado del cliente, al punto de que desde algunas computadoras viejas muchas veces no se podía usar.
+
+Luego de evaluar muchas opciones, decidimos mudarnos a Cryptpad, una alternativa a Google Drive que se centra en la seguridad y la privacidad. A pesar del nombre, Cryptpad es mucho más que una herramienta para crear notas de texto (pads). Desde Cryptpad se pueden crear múltiples tipos de documentos, como documentos de texto enriquecido, hojas de cálculo, presentaciones, formularios, diagramas, boards kanban, entre otros.
+
+Se pueden compartir carpetas completas o documentos individuales, y éstos pueden ser editados simultáneamente por varios usuarios, algo que nos interesaba mucho poder hacer.
+
+Cryptpad es una aplicación open source, y no hay un único proveedor online que lo ofrezca. Incluso existe la posibilidad de alojarlo uno mismo.
+
+Pueden leer más sobre Cryptpad aquí:
+
+=> https://cryptpad.org Web de Cryptpad
+
+Y pueden encontrar una instancia pública aquí:
+
+=> https://cryptpad.org/instances/ Instancias públicas de Cryptpad
+
+Nosotros decidimos usar la instancia provista por disroot.org, que funciona muy bien:
+
+=> https://cryptpad.disroot.org Cryptpad en Disroot
