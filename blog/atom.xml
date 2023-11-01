@@ -2,45 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>gemini://texto-plano.xyz/iddqd404/blog/</id>
   <title>iddqd404</title>
-  <updated>2023-10-03T18:23:15.569771+00:00</updated>
+  <updated>2023-11-01T18:30:51.021170+00:00</updated>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/atom.xml" rel="self"/>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/" rel="alternate"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
   <subtitle>Gemlog de iddqd404. Home en texto-plano.xyz/iddqd404</subtitle>
   <entry>
-    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-cryptdrive.gmi</id>
-    <title>[Tecnología] Cryptpad: Herramientas colaborativas online seguras y gratis</title>
-    <updated>2023-10-12T22:57:02.603272+00:00</updated>
-    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-cryptdrive.gmi" rel="alternate"/>
-  </entry>
-  <entry>
     <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-receta_fugazzeta.gmi</id>
     <title>[Cocina] Receta de fugazzeta casera</title>
-    <updated>2023-10-12T13:16:11.019911+00:00</updated>
+    <updated>2023-11-01T18:25:18.190533+00:00</updated>
     <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-receta_fugazzeta.gmi" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-cartas.gmi</id>
-    <title>El olvidado oficio de enviar y recibir cartas</title>
-    <updated>2023-10-09T00:56:22.513271+00:00</updated>
-    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-cartas.gmi" rel="alternate"/>
-  </entry>
-  <entry>
-    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-ejercicio1.gmi</id>
-    <title>Ejercicio de redacción - "Secuencia de apagado"</title>
-    <updated>2023-10-08T04:47:05.876643+00:00</updated>
-    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-ejercicio1.gmi" rel="alternate"/>
   </entry>
   <entry>
     <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-hackfun.gmi</id>
     <title>¿Qué es Hackfun?</title>
-    <updated>2023-10-04T20:00:32.536612+00:00</updated>
+    <updated>2023-11-01T18:25:18.190533+00:00</updated>
     <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-hackfun.gmi" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-ejercicio1.gmi</id>
+    <title>Ejercicio de redacción - "Secuencia de apagado"</title>
+    <updated>2023-11-01T18:25:18.190533+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-ejercicio1.gmi" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-cryptdrive.gmi</id>
+    <title>[Tecnología] Cryptpad: Herramientas colaborativas online seguras y gratis</title>
+    <updated>2023-11-01T18:25:18.190533+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-cryptdrive.gmi" rel="alternate"/>
   </entry>
   <entry>
     <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-como_decidir.gmi</id>
     <title>¿Cómo decidir qué hacer con una computadora en desuso?</title>
-    <updated>2023-10-03T18:23:15.569771+00:00</updated>
+    <updated>2023-11-01T18:25:18.190533+00:00</updated>
     <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-como_decidir.gmi" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-10-cartas.gmi</id>
+    <title>El olvidado oficio de enviar y recibir cartas</title>
+    <updated>2023-11-01T18:25:18.190533+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-10-cartas.gmi" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/2023-11-piratería.gmi</id>
+    <title>Vuelta a la piratería: El plan</title>
+    <updated>2023-11-01T18:30:51.021170+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-11-piratería.gmi" rel="alternate"/>
   </entry>
 </feed>
