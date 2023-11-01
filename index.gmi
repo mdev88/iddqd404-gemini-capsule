@@ -22,4 +22,6 @@ La cápsula de
 
 Gemlog personal en donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escritura de ficción, etc.
 
-=> gemini://texto-plano.xyz/iddqd404/blog/atom.xml Leer (Feed Atom)
+=> gemini://gemlog.blue/users/iddqd404/
+
+=> gemini://texto-plano.xyz/iddqd404/blog/atom.xml Leer (Archivado)
