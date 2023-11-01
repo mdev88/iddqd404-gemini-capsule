@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>gemini://texto-plano.xyz/iddqd404/blog/</id>
   <title>iddqd404</title>
-  <updated>2023-11-01T18:30:51.021170+00:00</updated>
+  <updated>2023-11-01T18:31:01.094825+00:00</updated>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/atom.xml" rel="self"/>
   <link href="gemini://texto-plano.xyz/iddqd404/blog/" rel="alternate"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
@@ -46,7 +46,7 @@
   <entry>
     <id>gemini://texto-plano.xyz/iddqd404/blog/2023-11-piratería.gmi</id>
     <title>Vuelta a la piratería: El plan</title>
-    <updated>2023-11-01T18:30:51.021170+00:00</updated>
+    <updated>2023-11-01T18:31:01.094825+00:00</updated>
     <link href="gemini://texto-plano.xyz/iddqd404/blog/2023-11-piratería.gmi" rel="alternate"/>
   </entry>
 </feed>
