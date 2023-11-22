@@ -22,6 +22,11 @@ La cápsula de
 
 Gemlog personal en donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escritura de ficción, etc.
 
-=> gemini://gemlog.blue/users/iddqd404/
+=> gemini://gemlog.blue/users/iddqd404/ Gemlog en gemlog.blue (Actual)
 
-=> gemini://texto-plano.xyz/iddqd404/blog/atom.xml Leer (Archivado)
+=> gemini://texto-plano.xyz/iddqd404/blog/atom.xml Gemlog anterior (Archivado)
+
+
+## Sitio personal
+
+=> https://texto-plano.xyz/users/iddqd404 Sitio personal en texto-plano.xyz (Web)
