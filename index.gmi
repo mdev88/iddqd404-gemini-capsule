@@ -27,6 +27,17 @@ Gemlog personal en donde escribo sobre lo que tenga en mente, sea tecnología, c
 => gemini://texto-plano.xyz/iddqd404/blog/atom.xml Gemlog anterior (Archivado)
 
 
-## Sitio personal
+## Sitio personal ("fat" web)
 
-=> https://texto-plano.xyz/users/iddqd404 Sitio personal en texto-plano.xyz (Web)
+Esta es una versión small web de mi sitio personal en donde cubro mis intereses y perfil profesional, entre otras cosas más.
+
+=> https://texto-plano.xyz/users/iddqd404 Sitio personal en texto-plano.xyz
+
+
+## Links
+
+Selección de links que he recopilado y sigo recopilando
+
+=> /paginas/links-gemini.gmi Links de Gemini (incluye listas curadas por otres usuaries también)
+=> /paginas/links-fat-web.gmi Links de la "fat" web
+

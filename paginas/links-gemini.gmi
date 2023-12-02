@@ -1,0 +1,89 @@
+# Links de Gemini
+
+=> gemini://texto-plano.xyz/iddqd404/	< Volver a iddqd404
+
+Aquí encontrarán links curados y lo mejor clasificados que pude, pero es posible que encuentren algunas referencias circulares o redundantes, como por ejemplo un link a un servicio determinado y luego otro link al gemlog del autor, en donde también hace referencia a dicho servicio.
+
+Los links no están ordenados por ningún criterio en especial. A veces alfabéticamente, otras veces por notoriedad o por orden en los que los agregué a la lista ¯\_(ツ)_/¯
+
+
+
+## Sobre Gemini
+
+=> gemini://skyjake.fi/lagrange/getting_started.gmi	Getting started
+
+=> gemini://geminiprotocol.net/docs/gemtext.gmi 	A quick introduction to "gemtext" markup
+
+=> gemini://geminiprotocol.net/docs/cheatsheet.gmi 	Gemtext cheatsheet
+
+=> gemini://geminiprotocol.net/docs/companion/robots.gmi	robots.txt for Gemini
+
+## Servicios
+
+### Hosting
+
+=> gemini://capsule.town/	Capsule town
+
+=> gemini://cities.yesterweb.org/	Yestercities
+
+### Buscadores
+
+=> gemini://geminispace.info/	Geminispace.info
+
+=> gemini://tlgs.one/	"Totally Legit" Gemini Search
+
+=> gemini://kennedy.gemi.dev/	Kennedy
+
+=> gemini://kennedy.gemi.dev/archive/	Delorean Time Machine
+
+### Agregadores
+
+=> gemini://caracolito.mooo.com/deriva/	bot en deriva - Agregador de cápsulas en Español/Castellano
+
+=> gemini://gemini.circumlunar.space/capcom/	CAPCOM Geminispace aggregator
+
+=> gemini://rawtext.club/~sloum/spacewalk.gmi	SPACEWALK
+
+=> gemini://skyjake.fi/~Cosmos/view.gmi	Cosmos
+
+=> gemini://freeshell.de/hashtags/multicapsule.gmi	Multi-capsule hashtags
+
+### Herramientas varias
+
+=> gemini://lasso.nytpu.com/	Lasso — Read-it-Later
+
+=> gemini://gemi.dev/cgi-bin/wp.cgi/	Gemipedia - A Gemini frontend to Wikipedia
+
+## Cápsulas personales / misceláneas
+
+=> gemini://gemi.dev/ 	Gemi.dev Heavy Industries
+
+=> gemini://perso.pw/blog/	Solene's % gemini capsule (hogar del famoso Old computer challenge)
+
+## Bots y cápsulas automatizadas
+
+=> gemini://ibannieto.info/cgi-bin/apod	NASA Astronomy Picture of the Day
+
+## Comunidades
+
+=> gemini://bbs.geminispace.org/	BBS
+
+=> gemini://texto-plano.xyz/	texto-plano.xyz (donde está alojado esta cápsula)
+
+=> gemini://archipielago.uno/	Archipielago I
+
+=> gemini://station.martinrue.com/	Station
+
+## Directorios
+
+=> gemini://medusae.space/	medusae.space gemini directory
+
+=> gemini://gemini.thegonz.net/cdg/	Collaborative Directory of Geminispace
+
+## Zines y publicaciones
+
+=> gemini://gemini.cyberbot.space/smolzine/	smolZINE
+
+## Listas de links curadas por otres usuaries
+
+=> gemini://sl1200.dystopic.world/gemini.gmi	Lista de sl1200.dystopic.world
