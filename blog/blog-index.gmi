@@ -1,0 +1,21 @@
+# Gemlog de iddqd404 en texto-plano.xyz
+
+Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escritura de ficción, programación, self-hosting y ñoñadas varias.
+
+## Publicaciones
+
+=> 2023-10-como_decidir.gmi	2023-10-01	¿Cómo decidir qué hacer con una computadora en desuso?
+
+=> 2023-10-ejercicio1.gmi	2023-10-05	Ejercicio de redacción - "Secuencia de apagado"
+
+=> 2023-10-cartas.gmi	2023-10-08	El olvidado oficio de enviar y recibir cartas
+
+=> 2023-10-hackfun.gmi	2023-10-15	¿Qué es Hackfun?
+
+=> 2023-10-cryptdrive.gmi	2023-10-18	Cryptpad: Herramientas colaborativas online seguras y gratis
+
+=> 2023-10-receta_fugazzeta.gmi	2023-10-25	Receta de fugazzeta casera
+
+=> 2023-11-piratería.gmi	2023-11-10	Vuelta a la piratería: El plan
+
+=> 2023-11-22-novedades-servidor.gmi	2023-11-22	Novedades sobre mi servidor doméstico

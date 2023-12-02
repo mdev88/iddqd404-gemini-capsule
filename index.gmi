@@ -22,9 +22,7 @@ La cápsula de
 
 Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escritura de ficción, programación, self-hosting y ñoñadas varias.
 
-=> gemini://gemlog.blue/users/iddqd404/ Gemlog
-
-=> gemini://texto-plano.xyz/iddqd404/blog/atom.xml Gemlog (Archivado)
+=> /iddqd404/blog/blog-index-gmi
 
 
 ## Sitio personal ("fat" web)

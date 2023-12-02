@@ -1,0 +1,47 @@
+# Novedades sobre mi servidor doméstico
+
+Anteriormente escribí sobre mi idea de montar un servidor doméstico con algunos servicios para aprovechar en casa.
+
+Bueno, ya lo hice, y hasta el momento quedó así:
+
+## Jellyfin
+
+Servidor de streaming (LAN) para ver películas y series a partir de archivos locales (más sobre los archivos más adelante). 
+
+Funciona muy bien, no tuve ningún tipo de problema con el streaming. Solamente en algunos casos muy puntuales tuve que buscar algún subtítulo manualmente, pero en el 99.9% de los casos, encontró los subtítulos adecuados.
+
+También en algún caso puntual tuve que usar la opción de "identificar" para corregir la autodetección de alguna película, pero fue cuestión de ingresar a mano el nombre y enseguida encontró la información correcta y corrigió los metadatos, la imágen de portada, etc.
+
+## Transmission
+
+Descargo las películas y las series por Torrent (obviamente).
+
+Estoy usando Transmission con el servicio de gestión remota por web, así puedo acceder desde cualquier dispositivo conectado a la red y agregar fácilmente los archivos torrent o los magnets.
+
+Cuando agrego una nueva descarga, escribo la ruta en donde quiero descargar los archivos. En mi caso creé /peliculas y /series, que son dos soft links a carpetas montadas en un disco secundario que uso exclusivamente como almacenamiento de archivos y backups.
+
+Tuve que hacer algunos retoques a los permisos y propietarios de las carpetas de descargas para que Transmission y Jellyfin pudieran leer y escribir según necesiten. En este momento no recuerdo exactamente qué tuve que hacer, pero cualquier persona que tuvo que lidiar con permisos en Linux sabe de lo que estoy hablando.
+
+## Back in time
+
+En mi computadora personal instalé Back in time, que es una aplicación para crear backups incrementales. Configuré un perfil para guardar copias remotas en el servidor doméstico, en una carpeta montada en el disco secundario, el que uso precisamente para almacenamiento de archivos y backups.
+
+Programé backups periódicos de mi carpeta home (exceptuando un par de carpetas que suelen contener archivos grandes y que no siempre me interesa conservar, como la carpeta de descargas, carpetas de cache, etc) tanto en un disco externo conectado a mi computadora, como en el servidor doméstico.
+
+## AdGuard Home
+
+AdGuard home es un bloqueador de ads por DNS, similar al conocido PiHole. 
+
+Tras la instalación, se deben configurar los dispositivos de la red que quieran aprovechar el bloqueador de ads para que utilicen como servidor de DNS a la IP del servidor doméstico (puerto 53). A partir de ese momento, todo el tráfico de red que intente acceder a una IP o dominio que esté en una de las múltiples blocklists de AdGuard que seleccioné, será bloqueado.
+
+No es perfecto, pero cumple muy bien con lo que promete. Hay cosas que no logra bloquear, como los ads en las apps móviles de Youtube, pero para eso existen otras soluciones, sobre las que quizás escriba en otra ocasión.
+
+## ¿Qué más podría hacer con el servidor?
+
+Estoy pensando en cuál puede ser una buena solución para sincronizar/hacer backup de los partidos guardados de los videojuegos que me pirateo, porque Steam me malacostumbró mucho, y quisiera tener alguna solución lo maś automatizada y desatendida posible para poder hacer algo similar.
+
+Estoy evaluando si usar MEGAsync, o si instalar algo como Syncthing en mi servidor, pero todavía estoy analizando los requicitos y considerando opciones.
+
+Por el momento no me interesa usar el servidor para nada fuera de mi red doméstica. No necesito ni me interesa poder acceder a ninguna de las cosas que monté hasta ahora desde fuera de casa, así que por el momento no veo la necesidad de poner una VPN o de exponer ningún servicio a Internet.
+
+¿Tienen ideas o recomendaciones sobre qué más podría poner en el servidor? Pueden enviarmelas por cualquiera de los medios de contacto que figuran en mi cápsula:
