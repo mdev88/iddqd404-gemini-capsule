@@ -22,7 +22,7 @@ La cápsula de
 
 Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escritura de ficción, programación, self-hosting y ñoñadas varias.
 
-=> /iddqd404/blog/blog-index-gmi
+=> /iddqd404/blog/blog-index.gmi Gemlog de iddqd404 en texto-plano.xyz
 
 
 ## Sitio personal ("fat" web)
