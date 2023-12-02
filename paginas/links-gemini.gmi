@@ -56,7 +56,7 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 ## Comunidades
 
 => gemini://bbs.geminispace.org/	BBS
-=> gemini://texto-plano.xyz/	texto-plano.xyz (donde está alojado esta cápsula)
+=> gemini://texto-plano.xyz/	texto-plano.xyz (donde está alojada esta cápsula)
 => gemini://archipielago.uno/	Archipielago I
 => gemini://station.martinrue.com/	Station
 
