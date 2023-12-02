@@ -11,55 +11,42 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 ## Sobre Gemini
 
 => gemini://skyjake.fi/lagrange/getting_started.gmi	Getting started
-
 => gemini://geminiprotocol.net/docs/gemtext.gmi 	A quick introduction to "gemtext" markup
-
 => gemini://geminiprotocol.net/docs/cheatsheet.gmi 	Gemtext cheatsheet
-
 => gemini://geminiprotocol.net/docs/companion/robots.gmi	robots.txt for Gemini
+=> gemini://geminiprotocol.net/docs/companion/subscription.gmi	Subscribing to Gemini pages
 
 ## Servicios
 
 ### Hosting
 
 => gemini://capsule.town/	Capsule town
-
 => gemini://cities.yesterweb.org/	Yestercities
 
 ### Buscadores
 
 => gemini://geminispace.info/	Geminispace.info
-
 => gemini://tlgs.one/	"Totally Legit" Gemini Search
-
 => gemini://kennedy.gemi.dev/	Kennedy
-
 => gemini://kennedy.gemi.dev/archive/	Delorean Time Machine
 
 ### Agregadores
 
 => gemini://caracolito.mooo.com/deriva/	bot en deriva - Agregador de cápsulas en Español/Castellano
-
 => gemini://gemini.circumlunar.space/capcom/	CAPCOM Geminispace aggregator
-
 => gemini://rawtext.club/~sloum/spacewalk.gmi	SPACEWALK
-
 => gemini://skyjake.fi/~Cosmos/view.gmi	Cosmos
-
 => gemini://freeshell.de/hashtags/multicapsule.gmi	Multi-capsule hashtags
 
 ### Herramientas varias
 
 => gemini://lasso.nytpu.com/	Lasso — Read-it-Later
-
 => gemini://gemi.dev/cgi-bin/wp.cgi/	Gemipedia - A Gemini frontend to Wikipedia
 
 ## Cápsulas personales / misceláneas
 
 => gemini://gemi.dev/ 	Gemi.dev Heavy Industries
-
 => gemini://perso.pw/blog/	Solene's % gemini capsule (hogar del famoso Old computer challenge)
-
 => gemini://hannuhartikainen.fi/	Hannu Hartikainen's Gemini space
 
 ## Bots y cápsulas automatizadas
@@ -69,17 +56,13 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 ## Comunidades
 
 => gemini://bbs.geminispace.org/	BBS
-
 => gemini://texto-plano.xyz/	texto-plano.xyz (donde está alojado esta cápsula)
-
 => gemini://archipielago.uno/	Archipielago I
-
 => gemini://station.martinrue.com/	Station
 
 ## Directorios
 
 => gemini://medusae.space/	medusae.space gemini directory
-
 => gemini://gemini.thegonz.net/cdg/	Collaborative Directory of Geminispace
 
 ## Zines y publicaciones
