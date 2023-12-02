@@ -60,6 +60,8 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 
 => gemini://perso.pw/blog/	Solene's % gemini capsule (hogar del famoso Old computer challenge)
 
+=> gemini://hannuhartikainen.fi/	Hannu Hartikainen's Gemini space
+
 ## Bots y cápsulas automatizadas
 
 => gemini://ibannieto.info/cgi-bin/apod	NASA Astronomy Picture of the Day
