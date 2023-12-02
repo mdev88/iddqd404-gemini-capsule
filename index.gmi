@@ -38,6 +38,6 @@ Esta es una versión small web de mi sitio personal en donde cubro mis intereses
 
 Selección de links que he recopilado y sigo recopilando
 
-=> /paginas/links-gemini.gmi Links de Gemini (incluye listas curadas por otres usuaries también)
-=> /paginas/links-fat-web.gmi Links de la "fat" web
+=> /iddqd404/paginas/links-gemini.gmi Links de Gemini
+=> /iddqd404/paginas/links-fat-web.gmi Links de la "fat" web
 
