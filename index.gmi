@@ -37,5 +37,4 @@ Esta es una versión minimalista de mi sitio personal en donde cubro mis interes
 Selección de links que he recopilado y sigo recopilando:
 
 => /iddqd404/paginas/links-gemini.gmi Links de Gemini
-=> /iddqd404/paginas/links-fat-web.gmi Links de "fat" web
 

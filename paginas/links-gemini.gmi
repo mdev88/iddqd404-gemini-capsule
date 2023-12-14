@@ -47,6 +47,7 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 
 => gemini://gemi.dev/ 	Gemi.dev Heavy Industries
 => gemini://perso.pw/blog/	Solene's % gemini capsule (hogar del famoso Old computer challenge)
+=> gemini://occ.deadnet.se/ Comunidad del Old Computer Challenge
 => gemini://hannuhartikainen.fi/	Hannu Hartikainen's Gemini space
 
 ## Bots y cápsulas automatizadas
