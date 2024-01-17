@@ -37,11 +37,14 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 => gemini://rawtext.club/~sloum/spacewalk.gmi	SPACEWALK
 => gemini://skyjake.fi/~Cosmos/view.gmi	Cosmos
 => gemini://freeshell.de/hashtags/multicapsule.gmi	Multi-capsule hashtags
+=> gemini://warmedal.se/~antenna/	Antenna
 
 ### Herramientas varias
 
 => gemini://lasso.nytpu.com/	Lasso — Read-it-Later
 => gemini://gemi.dev/cgi-bin/wp.cgi/	Gemipedia - A Gemini frontend to Wikipedia
+=> gemini://gemini.bunburya.eu/remini/	Proxy para ver Reddit desde Gemini
+=> gemini://skyjake.fi/smol-emoji/emoji-test.gmi	Emojis!
 
 ## Cápsulas personales / misceláneas
 
@@ -49,17 +52,23 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 => gemini://perso.pw/blog/	Solene's % gemini capsule (hogar del famoso Old computer challenge)
 => gemini://occ.deadnet.se/ Comunidad del Old Computer Challenge
 => gemini://hannuhartikainen.fi/	Hannu Hartikainen's Gemini space
+=> gemini://gemini.circumlunar.space/users/hundredrabbits/	Hundredrabbits - Laboratorio de resiliencia a bordo de un barco
+=> gemini://josipantolis.from.hr/	Josip's pod
 
 ## Bots y cápsulas automatizadas
 
 => gemini://ibannieto.info/cgi-bin/apod	NASA Astronomy Picture of the Day
+=> gemini://tilde.team/~sumpygump/explore/	Exploration Surprise! - Descubrir nuevas cápsulas cada día
 
-## Comunidades
+## Comunidades / Foros / Social
 
 => gemini://bbs.geminispace.org/	BBS
 => gemini://texto-plano.xyz/	texto-plano.xyz (donde está alojada esta cápsula)
 => gemini://archipielago.uno/	Archipielago I
 => gemini://station.martinrue.com/	Station
+=> gemini://gemini-textboard.fgaz.me/	Gemini textboard
+=> gemini://tildeverse.org/	Cápsula de tildeverse.org
+=> gemini://midnight.pub/	Midnight pub
 
 ## Directorios
 
@@ -69,6 +78,7 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 ## Zines y publicaciones
 
 => gemini://gemini.cyberbot.space/smolzine/	smolZINE
+=> gemini://republic.circumlunar.space/zine/	Circumlunar Transmissions
 
 ## Listas de links curadas por otres usuaries
 
