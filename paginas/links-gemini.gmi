@@ -9,15 +9,6 @@ Aquí encontrarán links curados y lo mejor clasificados que pude, pero es posib
 Los links no están ordenados por ningún criterio en especial. A veces alfabéticamente, otras veces por notoriedad o por orden en los que los agregué a la lista ¯\_(ツ)_/¯
 
 
-
-## Sobre Gemini
-
-=> gemini://skyjake.fi/lagrange/getting_started.gmi	Getting started
-=> gemini://geminiprotocol.net/docs/gemtext.gmi 	A quick introduction to "gemtext" markup
-=> gemini://geminiprotocol.net/docs/cheatsheet.gmi 	Gemtext cheatsheet
-=> gemini://geminiprotocol.net/docs/companion/robots.gmi	robots.txt for Gemini
-=> gemini://geminiprotocol.net/docs/companion/subscription.gmi	Subscribing to Gemini pages
-
 ## Cápsulas personales / misceláneas
 
 => gemini://gemi.dev/ 	Gemi.dev Heavy Industries
@@ -37,7 +28,6 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 => gemini://tildeverse.org/	Cápsula de tildeverse.org
 => gemini://midnight.pub/	Midnight pub
 
-
 ## Zines y publicaciones
 
 => gemini://gemini.cyberbot.space/smolzine/	smolZINE
@@ -46,7 +36,6 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 ## Listas de links curadas por otres usuaries
 
 => gemini://sl1200.dystopic.world/gemini.gmi	Lista de sl1200.dystopic.world
-
 
 ## Servicios
 
@@ -87,3 +76,11 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 => gemini://gemi.dev/cgi-bin/wp.cgi/	Gemipedia - A Gemini frontend to Wikipedia
 => gemini://gemini.bunburya.eu/remini/	Proxy para ver Reddit desde Gemini
 => gemini://skyjake.fi/smol-emoji/emoji-test.gmi	Emojis!
+
+## Sobre Gemini
+
+=> gemini://skyjake.fi/lagrange/getting_started.gmi	Getting started
+=> gemini://geminiprotocol.net/docs/gemtext.gmi 	A quick introduction to "gemtext" markup
+=> gemini://geminiprotocol.net/docs/cheatsheet.gmi 	Gemtext cheatsheet
+=> gemini://geminiprotocol.net/docs/companion/robots.gmi	robots.txt for Gemini
+=> gemini://geminiprotocol.net/docs/companion/subscription.gmi	Subscribing to Gemini pages
