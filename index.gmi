@@ -8,26 +8,32 @@ La cápsula de
 ██ ██████  ██████   ██████  ██████       ██  ██████       ██ 
 
 ```
+# en texto-plano.xyz
 
-# iddqd404 en texto-plano.xyz
+## Sobre mi
+
+Soy un nerd autodidacta, argentino pero ciudadano de Internet, a veces ansioso, a veces depresivo, pero siempre curioso.
 
 
 ## Contacto
 
-* Mastodon: @martindehf @rroba rebel.ar 
-* Email: iddqd404@texto-plano.xyz
+### Mastodon
+=> https://rebel.ar/@martindehf @martindehf@rebel.ar
+
+### Email
+=> mailto:iddqd404@texto-plano.xyz iddqd404@texto-plano.xyz
 
 
 ## Gemlog
 
-Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escritura de ficción, programación, self-hosting y ñoñadas varias.
+Gemlog donde escribo sobre lo que tenga en mente: tecnología, cocina, escritura de ficción, programación, self-hosting y otras cosas que me pasan por la cabeza.
 
 => /iddqd404/blog/blog-index.gmi Gemlog de iddqd404 en texto-plano.xyz
 
 
-## Sitio personal ("fat" web)
+## Sitio personal (web)
 
-Esta es una versión minimalista de mi sitio personal en donde cubro mis intereses y perfil profesional, entre otras cosas.
+Sitio minimalista en donde describo algunos de mis intereses, perfil profesional, entre otras cosas.
 
 => https://texto-plano.xyz/users/iddqd404 Sitio personal en texto-plano.xyz
 
@@ -37,4 +43,3 @@ Esta es una versión minimalista de mi sitio personal en donde cubro mis interes
 Selección de links que he recopilado y sigo recopilando:
 
 => /iddqd404/paginas/links-gemini.gmi Links de Gemini
-

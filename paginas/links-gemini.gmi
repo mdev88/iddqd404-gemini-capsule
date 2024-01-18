@@ -2,7 +2,7 @@
 
 => gemini://texto-plano.xyz/iddqd404/	< Volver a iddqd404
 
-Última actualización: 17-01-2024
+Última actualización: 18-01-2024
 
 Aquí encontrarán links curados y lo mejor clasificados que pude, pero es posible que encuentren algunas referencias circulares o redundantes, como por ejemplo un link a un servicio determinado y luego otro link al gemlog del autor, en donde también hace referencia a dicho servicio.
 
@@ -17,6 +17,36 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 => gemini://geminiprotocol.net/docs/cheatsheet.gmi 	Gemtext cheatsheet
 => gemini://geminiprotocol.net/docs/companion/robots.gmi	robots.txt for Gemini
 => gemini://geminiprotocol.net/docs/companion/subscription.gmi	Subscribing to Gemini pages
+
+## Cápsulas personales / misceláneas
+
+=> gemini://gemi.dev/ 	Gemi.dev Heavy Industries
+=> gemini://perso.pw/blog/	Solene's % gemini capsule (hogar del famoso Old computer challenge)
+=> gemini://occ.deadnet.se/ Comunidad del Old Computer Challenge
+=> gemini://hannuhartikainen.fi/	Hannu Hartikainen's Gemini space
+=> gemini://gemini.circumlunar.space/users/hundredrabbits/	Hundredrabbits - Laboratorio de resiliencia a bordo de un barco
+=> gemini://josipantolis.from.hr/	Josip's pod
+
+## Comunidades / Foros / Social
+
+=> gemini://bbs.geminispace.org/	BBS
+=> gemini://texto-plano.xyz/	texto-plano.xyz (donde está alojada esta cápsula)
+=> gemini://archipielago.uno/	Archipielago I
+=> gemini://station.martinrue.com/	Station
+=> gemini://gemini-textboard.fgaz.me/	Gemini textboard
+=> gemini://tildeverse.org/	Cápsula de tildeverse.org
+=> gemini://midnight.pub/	Midnight pub
+
+
+## Zines y publicaciones
+
+=> gemini://gemini.cyberbot.space/smolzine/	smolZINE
+=> gemini://republic.circumlunar.space/zine/	Circumlunar Transmissions
+
+## Listas de links curadas por otres usuaries
+
+=> gemini://sl1200.dystopic.world/gemini.gmi	Lista de sl1200.dystopic.world
+
 
 ## Servicios
 
@@ -41,47 +71,19 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 => gemini://freeshell.de/hashtags/multicapsule.gmi	Multi-capsule hashtags
 => gemini://warmedal.se/~antenna/	Antenna
 
+### Bots y cápsulas automatizadas
+
+=> gemini://ibannieto.info/cgi-bin/apod	NASA Astronomy Picture of the Day
+=> gemini://tilde.team/~sumpygump/explore/	Exploration Surprise! - Descubrir nuevas cápsulas cada día
+
+### Directorios
+
+=> gemini://medusae.space/	medusae.space gemini directory
+=> gemini://gemini.thegonz.net/cdg/	Collaborative Directory of Geminispace
+
 ### Herramientas varias
 
 => gemini://lasso.nytpu.com/	Lasso — Read-it-Later
 => gemini://gemi.dev/cgi-bin/wp.cgi/	Gemipedia - A Gemini frontend to Wikipedia
 => gemini://gemini.bunburya.eu/remini/	Proxy para ver Reddit desde Gemini
 => gemini://skyjake.fi/smol-emoji/emoji-test.gmi	Emojis!
-
-## Cápsulas personales / misceláneas
-
-=> gemini://gemi.dev/ 	Gemi.dev Heavy Industries
-=> gemini://perso.pw/blog/	Solene's % gemini capsule (hogar del famoso Old computer challenge)
-=> gemini://occ.deadnet.se/ Comunidad del Old Computer Challenge
-=> gemini://hannuhartikainen.fi/	Hannu Hartikainen's Gemini space
-=> gemini://gemini.circumlunar.space/users/hundredrabbits/	Hundredrabbits - Laboratorio de resiliencia a bordo de un barco
-=> gemini://josipantolis.from.hr/	Josip's pod
-
-## Bots y cápsulas automatizadas
-
-=> gemini://ibannieto.info/cgi-bin/apod	NASA Astronomy Picture of the Day
-=> gemini://tilde.team/~sumpygump/explore/	Exploration Surprise! - Descubrir nuevas cápsulas cada día
-
-## Comunidades / Foros / Social
-
-=> gemini://bbs.geminispace.org/	BBS
-=> gemini://texto-plano.xyz/	texto-plano.xyz (donde está alojada esta cápsula)
-=> gemini://archipielago.uno/	Archipielago I
-=> gemini://station.martinrue.com/	Station
-=> gemini://gemini-textboard.fgaz.me/	Gemini textboard
-=> gemini://tildeverse.org/	Cápsula de tildeverse.org
-=> gemini://midnight.pub/	Midnight pub
-
-## Directorios
-
-=> gemini://medusae.space/	medusae.space gemini directory
-=> gemini://gemini.thegonz.net/cdg/	Collaborative Directory of Geminispace
-
-## Zines y publicaciones
-
-=> gemini://gemini.cyberbot.space/smolzine/	smolZINE
-=> gemini://republic.circumlunar.space/zine/	Circumlunar Transmissions
-
-## Listas de links curadas por otres usuaries
-
-=> gemini://sl1200.dystopic.world/gemini.gmi	Lista de sl1200.dystopic.world
