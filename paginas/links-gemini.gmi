@@ -17,6 +17,7 @@ Los links no están ordenados por ningún criterio en especial. A veces alfabét
 => gemini://hannuhartikainen.fi/	Hannu Hartikainen's Gemini space
 => gemini://gemini.circumlunar.space/users/hundredrabbits/	Hundredrabbits - Laboratorio de resiliencia a bordo de un barco
 => gemini://josipantolis.from.hr/	Josip's pod
+=> gemini://gemini.ctrl-c.club/~lettuce/	Lettuce gemlog
 
 ## Comunidades / Foros / Social
 
