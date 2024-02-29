@@ -12,7 +12,7 @@ La cápsula de
 
 ## Sobre mi
 
-Soy un nerd autodidacta, argentino pero ciudadano de Internet, a veces ansioso, a veces depresivo, pero siempre curioso.
+Soy un nerd autodidacta, argentino, pero ciudadano de Internet, a veces ansioso, a veces depresivo, pero siempre curioso.
 
 
 ## Contacto
@@ -26,20 +26,20 @@ Soy un nerd autodidacta, argentino pero ciudadano de Internet, a veces ansioso, 
 
 ## Gemlog
 
-Gemlog donde escribo sobre lo que tenga en mente: tecnología, cocina, escritura de ficción, programación, self-hosting y otras cosas que me pasan por la cabeza.
+Gemlog en español en donde escribo sobre lo que tenga en mente: tecnología, cocina, escritura de ficción, programación, self-hosting y cosas que encuentro en Internet.
 
 => /iddqd404/blog/blog-index.gmi Gemlog de iddqd404 en texto-plano.xyz
 
 
-## Sitio personal (web)
+## Sitio personal
 
-Sitio minimalista en donde describo algunos de mis intereses, perfil profesional, entre otras cosas.
+Sitio en donde describo algunos de mis intereses, perfil profesional, blog, entre otras cosas.
 
-=> https://texto-plano.xyz/users/iddqd404 Sitio personal en texto-plano.xyz
+=> https://martinvukovic.com Sitio personal
+=> https://texto-plano.xyz/~iddqd404 Sitio personal (mirror en texto-plano.xyz)
 
 
-## Links
-
-Selección de links que he recopilado y sigo recopilando:
+## Links recopilados
 
 => /iddqd404/paginas/links-gemini.gmi Links de Gemini
+=> /iddqd404/paginas/links.gmi Links web
