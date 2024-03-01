@@ -1,6 +1,8 @@
 # Nueva sección de links
 
-Agregué una sección de links web en donde voy a ir recopilando esos links que vale la pena tener guardados o al menos visitar una vez.
+Agregué una sección de links web en donde voy a ir recopilando esos links que vale la pena tener guardados o al menos visitar una vez:
+
+=> gemini://texto-plano.xyz/iddqd404/paginas/links.gmi Links web
 
 Voy a intentar tener la disciplina de crear una publicación en este gemlog cuando agregue links nuevos así quienes estén interesades no tienen que ir pescando los links nuevos entre los viejos (ya me veo a les nerds de Gemini haciendo `diff`s para ver lo que se agregó o quitó XD)
 
