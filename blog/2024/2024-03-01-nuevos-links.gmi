@@ -1,0 +1,34 @@
+# Nueva sección de links
+
+Agregué una sección de links web en donde voy a ir recopilando esos links que vale la pena tener guardados o al menos visitar una vez.
+
+Voy a intentar tener la disciplina de crear una publicación en este gemlog cuando agregue links nuevos así quienes estén interesades no tienen que ir pescando los links nuevos entre los viejos (ya me veo a les nerds de Gemini haciendo `diff`s para ver lo que se agregó o quitó XD)
+
+Acá van los links de la primera tanda, sin orden específico, y sin categorizar (en la página de links van a estar mejor clasificados):
+
+=> http://www.simonstalenhag.se/ Simon Stalenhag
+=> https://cybercirujas.rebelion.digital/foro/ Foro de Cybercirujas
+=> https://www.printablepaper.net/ Free Printable Paper
+=> https://rebelion.digital/2021/01/29/el-pi1541-punga-parte-1/ El Pi1541 Punga
+=> https://www.familygamingdatabase.com/gamefinder Game Finder
+=> http://www.notpron.com/notpron/ Notpron - The hardest riddle available on the Internet
+=> https://www.foldnfly.com/ Paper Airplane Designs
+=> https://steamcommunity.com/sharedfiles/filedetails/?id=372787617 Brutal Doom on Linux, the easy way
+=> https://fitgirl-repacks.site/ Fitgirl repacks
+=> http://www.skidrowreloaded.com/ Skidrow & Reloaded
+=> https://legacyupdate.net/ Community-run Windows Update service for old windows versions
+=> https://tonsky.me/blog/disenchantment/ Software disenchantment - Nikita Prokopov
+=> https://rebelion.digital/2021/03/05/manifiesto-cyberciruja/ Manifiesto Cyberciruja
+=> https://digitalfirstaid.org/es/ Kit de primeros auxilios digitales
+=> https://writefreely.org/ Writefreely - An open source platform for building a writing space on the web.
+=> https://github.com/nextcloud/all-in-one#how-to-use-this Nextcloud All-in-one
+=> https://cryptpad.disroot.org CryptDrive (hosteado por disroot.org)
+=> https://github.com/FossifyOrg Fossify - Community-backed, open-source, and ad-free mobile apps
+=> https://antennapod.org/es/ El Reproductor de Podcast Abierto
+=> https://github.com/matterhorn-chat/matterhorn Matterhorn - Terminal client for the Mattermost chat system
+=> https://snapcraft.io/libation Libation - Free, open source audible library manager
+=> https://tildegit.org/tomasino/pb pb - Helper utility for using 0x0 pastebin services
+=> https://commonmark.org/help/ Markdown Cheatsheet
+=> https://blogsystem5.substack.com/p/from-0-to-1-mb-in-dos From 0 to 1 MB in DOS
+=> https://archive.org/details/CosmosAPersonalVoyage Cosmos: A Personal Voyage (with Carl Sagan)
+=> https://www.youtube.com/watch?v=OoJsPvmFixU  I Was SCARED To Say This To NASA... (But I said it anyway) - Smarter Every Day 293
