@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>gemini://texto-plano.xyz/iddqd404/blog/</id>
+  <title>iddqd404</title>
+  <updated>2024-09-03T14:31:07.303334+00:00</updated>
+  <link href="gemini://texto-plano.xyz/iddqd404/blog/atom.xml" rel="self"/>
+  <link href="gemini://texto-plano.xyz/iddqd404/blog/" rel="alternate"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Gemlog de iddqd404. Home en texto-plano.xyz/iddqd404</subtitle>
+  <entry>
+    <id>gemini://texto-plano.xyz/iddqd404/blog/blog/blog-index.gmi</id>
+    <title>Gemlog de iddqd404 en texto-plano.xyz</title>
+    <updated>2024-09-03T14:31:07.303334+00:00</updated>
+    <link href="gemini://texto-plano.xyz/iddqd404/blog/blog/blog-index.gmi"/>
+  </entry>
+</feed>
