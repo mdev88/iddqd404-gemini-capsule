@@ -26,7 +26,7 @@ Soy un nerd autodidacta, argentino, pero ciudadano de Internet, a veces ansioso,
 
 ## Gemlog
 
-Gemlog en español en donde escribo sobre lo que tenga en mente: tecnología, cocina, escritura de ficción, programación, self-hosting y cosas que encuentro en Internet.
+Gemlog en español en donde escribo sobre lo que tenga en mente: tecnología, cocina, escritura de ficción, programación, self-hosting y cosas que encuentro en Internet. A veces me animo a publicar algunas cosas acá que no me animaría a publicar en las ultra transitadas aguas de la WWW.
 
 => /iddqd404/blog/blog-index.gmi Gemlog de iddqd404 en texto-plano.xyz
 
@@ -36,7 +36,6 @@ Gemlog en español en donde escribo sobre lo que tenga en mente: tecnología, co
 Sitio en donde describo algunos de mis intereses, perfil profesional, blog, entre otras cosas.
 
 => https://martinvukovic.com Sitio personal
-=> https://texto-plano.xyz/~iddqd404 Sitio personal (mirror en texto-plano.xyz)
 
 
 ## Links recopilados
