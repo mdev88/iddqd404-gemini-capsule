@@ -4,6 +4,7 @@ Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escri
 
 ## Publicaciones
 
+=> 2025/2025-03-03-notas-instalacion-slackware-multilib.gmi	2025-03-03 Notas instalacion slackware multilib
 => 2024/2024-03-01-nuevos-links.gmi	2024-03-01 Nueva sección de links
 => 2023/2023-11-22-novedades-servidor.gmi	2023-11-22	Novedades sobre mi servidor doméstico
 => 2023/2023-11-piratería.gmi	2023-11-10	Vuelta a la piratería: El plan

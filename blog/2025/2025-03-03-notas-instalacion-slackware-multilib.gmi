@@ -1,0 +1,113 @@
+# Notas instalación Slackware 64 multilib
+
+Actualmente uso Manjaro en mi computadora "del trabajo". Hace unos días probé Slackware en una compu vieja y como me sorprendió lo bien que anduvo, y además me trajo muy buenos recuerdos de cuando me inicié en el mundo de Linux con Slackware allá en los 90s, me propuse instalarlo también en mi compu del trabajo (en un disco aparte) para ver hasta dónde era capáz de hacerlo funcionar.
+
+Me planteé distintos objetivos:
+
+* Objetivo 1: Instalarlo y "que funcione"
+
+* Objetivo 2: Lograr usarlo para trabajar (Android Studio + Emulador + Flutter)
+
+* Objetivo 3: Correr juegos con Steam, Heroic Launcher, Lutris, Wine, etc.
+
+Al momento de escribir esto, logré cumplir los objetivos 1 y 2. Todavía no empecé a trabajar en el objetivo 3.
+
+A continuación les dejo las notas que tomé para lograrlo, más como un recordatorio para mi, pero que quizás le sirva a quien lee:
+
+# Nota sobre Slackware 15 CURRENT
+
+Inicialmente instalé Slackware 15 stable, y todo iba sobre ruedas, hasta que quise ejecutar el emulador de Android. Ahí me enteré de que necesitaba unas dependencias que eran de 32 bits, y para ello, necesitaba que mi sistema fuera multilib.
+
+Esto resultó ser inesperado y mucho más complicado de lo que esperaba. Leí documentación, wikis, foros, y hasta pregunté por Mastodon a gente que sabe mucho más que yo, y finalmente llegué a la fórmula correcta. La forma más fácil de tener un Slackware multilib, es (a partir de Slackware 15) instalar la versión CURRENT, no la STABLE. Antes de la versión 15, existía un repositorio de la comunidad con las librerías de 32 bits y había que hacer toda una serie de "hacks" para poder tener un sistema multilib, que además, no sé qué tan frágil o robusto quedaría.
+
+Ahora, la versión CURRENT incorporó gran parte de eso y el procedimiento fue mucho más fácil, como se verá más adelante.
+
+## Sistema
+
+### Particionado e instalación
+
+* Para simplificar las cosas, hice el particionado desde mi instalación de Manjaro usando Gparted.
+* El layout que elegí fue una primera partición de tipo BIOS Boot (esto era requerido para poder instalar GRUB usando EFI), una partición para montar /root, otra para /home y la última para ls swap.
+* Booteé Slackware 15 CURRENT, ejecuté el setup y seguí los pasos indicados en el instalador, hasta el paso en el que pregunta qué gestor de arranque quería instalar.
+* El instalador ofrece LILO o ELILO como gestores de arranque. GRUB no está (al momento de escribir esto) incluído en el instalador, por lo que se requirieron de los siguientes pasos adicionales.
+* Saltear la instalación de LILO/ELILO, completar los últimos pasos de la instalación, y al terminar, elegir la opción de abrir una Shell.
+* En la shell, ejecutar:
+```
+chroot /mnt
+```
+para "meterse" en el sistema instalado, y ejecutar:
+```
+grub-install /dev/nvme0n1
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+* Reinicié, y fui recibido por el gamiliar menú de GRUB, incluyendo una entrada para mi instalación de Manjaro :)
+* https://docs.slackware.com/howtos:slackware_admin:grub_on_first_install
+
+### Configuración del sistema
+* Agregar un usuario con
+```
+adduser <nombre de usuario>
+```
+y agregarlo al grupo wheel con ese mismo comando.
+
+* Habilitar sudo para el usuario recién creado siguiendo los pasos de:
+
+=> https://docs.slackware.com/howtos:misc:enabling_sudo_on_slackware
+
+* Actualizar el sistema:
+	* REVISAR: Estas instrucciones están un poco desactualizadas y además hacen referencia a LILO/ELILO, no GRUB, así que hay que consultar la documentación actualizada:
+=> https://docs.slackware.com/howtos:slackware_admin:systemupgrade
+
+* Instalar sbopkg:
+=> https://www.sbopkg.org/downloads.php
+	* sbopkg es un gestor de paquetes que utiliza slackbuilds.org como repositorio
+	* sbopkg -r		# Sincronizar db
+	* sbopkg -g <paquete>	# Buscar por string
+	* sbopkg -s		# Buscar por nombre de paquete
+	* sbopkg -i <paquete>  # Instalar paquete
+	* sbopkg -c		# Check updates
+* Habilitar el gestor de sesiones visual (KDM)
+=> https://docs.slackware.com/slackbook:xwindow_system
+	* Editar /etc/inittab
+	* Cambiar "Default runlevel" de 3 a 4. Guardar y salir. ¡Listo!
+
+## Multilib
+* Instalar slackpkg+ con slackpkg
+* Ejecutar:
+```
+/usr/doc/slackpkg+-*/setupmultilib.sh
+```
+* Al finalizar, se muestra este mensaje, que me guardé en un txt para tener a mano y no olvidarme:
+```
+To keep multilib updated, simply type:
+# slackpkg upgrade-all
+Remember... When you see NEW packages with 'slackpkg install-new' command,
+you may need to install the related multilib package
+```
+
+## Instalar paquetes
+* Instalar software deseado, generalmente con sbopkg. En mi caso instalé Librewolf porque lo prefiero sobre Firefox.
+* Instalar software descargando los paquetes desde la web oficial:
+	* Telegram
+	* Android Studio
+	* Flutter (fvm)
+	* Syncthing: El paquete disponible en slackbuilds.org me dio problemas de permisos con la auto-actualización. En cambio, si guardo y ejecuto Syncthing en mi carpeta de usuario, ese problema desaparece.
+		* Agregar a .bash_profile el siguiente bloque para lanzarlo al inicio de la sesión:
+```
+if /usr/bin/pgrep syncthing >/dev/null; then
+		echo "Syncthing already started!"
+else
+		echo "Starting Syncthing..."
+		/home/user/Apps/syncthing/syncthing -no-browser 1>/dev/null 2>&1 &
+		echo "Access Syncthing at http://127.0.0.1:8384"
+fi
+```
+
+## Emulador de Android
+El emulador de Android (o Genymotion, o VirtualBox) requiere multilib:
+* Instalar dependencias de 32 bits con sbopkg: libmd y libbsd, en ese orden.
+
+## Fin
+
+Por el momento, eso es todo lo que necesitaba para poder trabajar en Slackware. Publicaré actualizaciones si tengo más novedades.
+
