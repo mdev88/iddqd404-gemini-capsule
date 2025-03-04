@@ -157,13 +157,15 @@ Flutter
 
 #### lutris
 
-https://github.com/lutris/lutris/wiki/How-to:-Esync/0f0cb4765e2533debf7ec242eddaf9630151115a
-https://github.com/lutris/docs/blob/master/HowToEsync.md
-https://www.linuxquestions.org/questions/slackware-14/making-your-slackware64-current-ready-for-steam-and-dxvk-wine-gaming-4175646828/
+=> https://github.com/lutris/lutris/wiki/How-to:-Esync/0f0cb4765e2533debf7ec242eddaf9630151115a
+
+?> https://github.com/lutris/docs/blob/master/HowToEsync.md
+
+?> https://www.linuxquestions.org/questions/slackware-14/making-your-slackware64-current-ready-for-steam-and-dxvk-wine-gaming-4175646828/
 
 * Instalar Lutris con sbopkg
 
-* Habilitar Esync: Agregar al archivo `/etc/security/limits.conf`:
+* Habilitar Esync: Agregar al archivo /etc/security/limits.conf:
 
 ```
 <username> hard nofile 524288
@@ -173,7 +175,11 @@ https://www.linuxquestions.org/questions/slackware-14/making-your-slackware64-cu
 
 * Instalar vkd3d (slackpkg)
 
-* Ir al repositorio de Github de dxvk (https://github.com/doitsujin/dxvk/releases) y en las opciones avanzadas del runner en Lutris, poner manualmente la última versión. Lutris se encarga de descargarla automáticamente.
+* Ir al repositorio de Github de dxvk
+
+=> https://github.com/doitsujin/dxvk/releases
+
+y en las opciones avanzadas del runner en Lutris, poner manualmente la última versión. Lutris se encarga de descargarla automáticamente.
 
 * Si Esync o Fsync dan problemas al intentar ejecutar los juegos con Proton, probar desactivando esas funcionalidades en Lutris. El rendimiento quizás sea un poco menor, aunque yo no noté diferencia. TODO: Resolver esto de forma más "elegante".
 
