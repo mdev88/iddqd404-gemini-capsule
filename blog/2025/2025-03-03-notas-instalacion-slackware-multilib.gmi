@@ -1,5 +1,8 @@
 # Notas instalación Slackware 64 multilib
 
+## Nota: Estas notas están incompletas y si se intenta seguirlas al pié de la letra es posible que se encuentren problemas. Igualmente dejo la publicación a modo informativo para comunicar cuáles eran mis objetivos y el racional para estas tareas. En la siguiente publicación en mi blog, ofrezco una versión extendida y mejorada.
+
+
 Actualmente uso Manjaro en mi computadora "del trabajo". Hace unos días probé Slackware en una compu vieja y como me sorprendió lo bien que anduvo, y además me trajo muy buenos recuerdos de cuando me inicié en el mundo de Linux con Slackware allá en los 90s, me propuse instalarlo también en mi compu del trabajo (en un disco aparte) para ver hasta dónde era capáz de hacerlo funcionar.
 
 Me planteé distintos objetivos:

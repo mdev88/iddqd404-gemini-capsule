@@ -1,0 +1,214 @@
+# Notas instalación Slackware 64 current multilib (actualizado y ampliado)
+
+Descargo: Estas son mis notas personales, las preferencias pueden cambiar de usuario en usuario.
+
+## ISO
+
+Descargar la iso -current:
+
+=> https://slackware.nl/slackware/slackware64-current-iso/
+
+## Instalación
+
+### GRUB y particionado (requerido)
+
+* Crear primera partición de tipo BIOS Boot (EF02). Documentación dice 1Mb pero hacerla más grande por las dudas (la hice de unos 300mb porque antes era una partición EFI)
+
+* Saltearse la instalación de LILO/ELILO
+
+* Luego de finalizar, abrir shell y ejecutar:
+
+```
+chroot /mnt
+grub-install --modules=part_gpt /dev/nvme0p1  # Especificar disco, no partición
+grub-mkconfig -o /boot/grub/grub.cfg  # Ejecutar luego de cada actualización del Kernel!
+```
+
+Fuentes:
+
+=> https://docs.slackware.com/howtos:slackware_admin:installing_with_gpt_without_uefi#grub_2
+
+=> https://docs.slackware.com/howtos:slackware_admin:grub_on_first_install
+
+## Configuración del sistema
+
+### Agregar nuevo usuario
+
+```
+adduser <username> (agregar al grupo wheel)
+```
+
+### Habilitar sudo
+
+Seguir los pasos del tutorial oficial:
+
+=> https://docs.slackware.com/howtos:misc:enabling_sudo_on_slackware
+
+### sbopkg
+
+Instala paquetes desde slackbuilds.org
+
+=> https://www.sbopkg.org/downloads.php
+
+=> https://docs.slackware.com/howtos:slackware_admin:building_packages_with_sbopkg
+
+=> https://github.com/Ponce/slackbuilds
+
+=> https://github.com/Ponce/slackbuilds/wiki/configuring-the-current-repository-with-sbopkg
+
+* Descargar el paquete binario e instalarlo con `installpkg <archivo>`
+
+* Editar el archivo /etc/sbopkg/sbopkg.conf para usar el repositorio -current
+
+* Si hay errores con el repositorio -current, probar el comando `rm -fR /var/lib/sbopkg/SBo-git` y reintentar.
+
+Uso:
+
+```
+sbopkg -r               # Sincroniza la db
+sbopkg -g <string>      # Busca por string
+sbopkg -s <paquete>     # Busca por nombre de paquete
+sbopkg -i <paquete>     # Instala paquete
+sqg -p <paquete>        # Genera cola para instalar paquete. Luego al usar sbopkg -i, elegir cola.
+sbopkg -c               # Checkea actualizaciones disponibles
+```
+
+### slackpkg+
+
+Plugin de slackpkg que permite usar repositorios de terceros.
+
+=> https://slakfinder.org/slackpkg+.html
+
+* Instalar slackpkg+ con slackpkg
+
+* Para habilitar multilib, ejecutar: 
+
+```
+/usr/doc/slackpkg+-*/setupmultilib.sh 
+```
+
+* Agregar repositorio de alienbob editando /etc/slackpkg/slackpkgplus.conf
+
+### Habilitar display manager
+
+Editar /etc/inittab y cambiar el default runlevel de 3 a 4
+
+Fuente: 
+
+=> https://docs.slackware.com/slackbook:xwindow_system
+
+
+## Fundamentales
+
+* Librewolf (sbopkg)
+
+	* Firefox Sync
+
+	* Login Bitwarden
+
+	* Firefox Multi Account Groups
+
+	* Simple tab groups
+
+	* Theme
+
+* Telegram (bajar desde la web)
+
+* Syncthing (bajar desde la web)
+
+	* Descomprimir en alguna carpeta dentro del home del usuario (por ejemplo /home/usuario/Apps)
+
+	* Lanzar al inicio desde .bash_profile:
+
+```
+if /usr/bin/pgrep syncthing >/dev/null; then
+		echo "Syncthing already started!"
+else
+		echo "Starting Syncthing..."
+		/home/user/Apps/syncthing/syncthing -no-browser 1>/dev/null 2>&1 &
+		echo "Access Syncthing at http://127.0.0.1:8384"
+fi
+```
+
+* chromium-ungoogled (slackpkg)
+
+
+### Herramientas
+
+* p7zip (slackpkg)
+
+### Trabajo
+
+* Android Studio
+
+	* Emulador requiere instalar libmd y libbsd (sbopkg)
+
+	* Descargar zip para Linux
+
+```
+https://developer.android.com/studio
+```
+
+	* Crear acceso (manualmente o desde el menú de AS)
+
+	* Plugins: Flutter, Dart, Flutter enhancement suite
+
+* Flutter
+
+	* fvm: https://fvm.app/documentation/getting-started/installation
+
+    * Linkear en /usr/local/bin el binario ~/.fvm_flutter/bin/fvm
+
+### Juegos
+
+* Steam (slackpkg)
+
+* wine (sbopkg)
+
+* 
+
+#### lutris
+
+https://github.com/lutris/lutris/wiki/How-to:-Esync/0f0cb4765e2533debf7ec242eddaf9630151115a
+https://github.com/lutris/docs/blob/master/HowToEsync.md
+https://www.linuxquestions.org/questions/slackware-14/making-your-slackware64-current-ready-for-steam-and-dxvk-wine-gaming-4175646828/
+
+* Instalar Lutris con sbopkg
+
+* Habilitar Esync: Agregar al archivo `/etc/security/limits.conf`:
+
+```
+<username> hard nofile 524288
+```
+
+* Revisar que esté instalado el vulkan sdk de 32 y 64 bits (slackpkg) 
+
+* Instalar vkd3d (slackpkg)
+
+* Ir al repositorio de Github de dxvk (https://github.com/doitsujin/dxvk/releases) y en las opciones avanzadas del runner en Lutris, poner manualmente la última versión. Lutris se encarga de descargarla automáticamente.
+
+* Si Esync o Fsync dan problemas al intentar ejecutar los juegos con Proton, probar desactivando esas funcionalidades en Lutris. El rendimiento quizás sea un poco menor, aunque yo no noté diferencia. TODO: Resolver esto de forma más "elegante".
+
+### Otros
+
+* Nicotine+ (sbopkg)
+
+* signal-desktop (sbopkg)
+
+### Actualizar el sistema
+
+Consideraciones generales a tener en cuenta:
+
+* GRUB en lugar de LILO/ELILO
+
+* Sistema multilib
+
+* slackpkg+ (repositorios de terceros multilib+alienbob)
+
+```
+slackpkg update gpg  # La primera vez, o si se cambiaron mirrors
+slackpkg update 
+slackpkg install-new
+slackpkg upgrade-all
+grub-mkconfig -o /boot/grub/grub.cfg  # Si hubo actualización del Kernel
+```
