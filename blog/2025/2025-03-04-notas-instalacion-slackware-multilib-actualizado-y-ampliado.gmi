@@ -133,7 +133,8 @@ fi
 
 ### Trabajo
 
-#### Android Studio
+Android Studio
+
 * Emulador requiere instalar libmd y libbsd (sbopkg)
 * Descargar zip para Linux
 
@@ -143,7 +144,8 @@ https://developer.android.com/studio
 * Crear acceso (manualmente o desde el menú de AS)
 * Plugins: Flutter, Dart, Flutter enhancement suite
 
-#### Flutter
+Flutter
+
 * fvm: https://fvm.app/documentation/getting-started/installation
 * Linkear en /usr/local/bin el binario ~/.fvm_flutter/bin/fvm
 
