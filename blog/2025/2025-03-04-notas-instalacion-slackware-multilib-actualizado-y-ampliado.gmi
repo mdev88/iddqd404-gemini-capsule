@@ -101,23 +101,16 @@ Fuente:
 ## Fundamentales
 
 * Librewolf (sbopkg)
-
 	* Firefox Sync
-
 	* Login Bitwarden
-
 	* Firefox Multi Account Groups
-
 	* Simple tab groups
-
 	* Theme
 
 * Telegram (bajar desde la web)
 
 * Syncthing (bajar desde la web)
-
 	* Descomprimir en alguna carpeta dentro del home del usuario (por ejemplo /home/usuario/Apps)
-
 	* Lanzar al inicio desde .bash_profile:
 
 ```
@@ -140,9 +133,7 @@ fi
 ### Trabajo
 
 * Android Studio
-
 	* Emulador requiere instalar libmd y libbsd (sbopkg)
-
 	* Descargar zip para Linux
 
 ```
@@ -164,8 +155,6 @@ https://developer.android.com/studio
 * Steam (slackpkg)
 
 * wine (sbopkg)
-
-* 
 
 #### lutris
 
