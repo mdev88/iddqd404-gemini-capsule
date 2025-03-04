@@ -101,17 +101,17 @@ Fuente:
 ## Fundamentales
 
 * Librewolf (sbopkg)
-	* Firefox Sync
-	* Login Bitwarden
-	* Firefox Multi Account Groups
-	* Simple tab groups
-	* Theme
+  * Firefox Sync
+  * Login Bitwarden
+  * Firefox Multi Account Groups
+  * Simple tab groups
+  * Theme
 
 * Telegram (bajar desde la web)
 
 * Syncthing (bajar desde la web)
-	* Descomprimir en alguna carpeta dentro del home del usuario (por ejemplo /home/usuario/Apps)
-	* Lanzar al inicio desde .bash_profile:
+  * Descomprimir en alguna carpeta dentro del home del usuario (por ejemplo /home/usuario/Apps)
+  * Lanzar al inicio desde .bash_profile:
 
 ```
 if /usr/bin/pgrep syncthing >/dev/null; then
