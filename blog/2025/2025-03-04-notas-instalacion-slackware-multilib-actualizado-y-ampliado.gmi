@@ -126,12 +126,15 @@ fi
 
 * chromium-ungoogled (slackpkg)
 
+* Nicotine+ (sbopkg)
+
+* signal-desktop (sbopkg)
 
 ### Herramientas
 
 * p7zip (slackpkg)
 
-### Trabajo
+## Trabajo
 
 Android Studio
 
@@ -149,13 +152,13 @@ Flutter
 * fvm: https://fvm.app/documentation/getting-started/installation
 * Linkear en /usr/local/bin el binario ~/.fvm_flutter/bin/fvm
 
-### Juegos
+## Juegos
 
 * Steam (slackpkg)
 
 * wine (sbopkg)
 
-#### lutris
+### lutris
 
 => https://github.com/lutris/lutris/wiki/How-to:-Esync/0f0cb4765e2533debf7ec242eddaf9630151115a
 
@@ -183,13 +186,8 @@ y en las opciones avanzadas del runner en Lutris, poner manualmente la última v
 
 * Si Esync o Fsync dan problemas al intentar ejecutar los juegos con Proton, probar desactivando esas funcionalidades en Lutris. El rendimiento quizás sea un poco menor, aunque yo no noté diferencia. TODO: Resolver esto de forma más "elegante".
 
-### Otros
 
-* Nicotine+ (sbopkg)
-
-* signal-desktop (sbopkg)
-
-### Actualizar el sistema
+## Actualizar el sistema
 
 Consideraciones generales a tener en cuenta:
 
