@@ -1,6 +1,8 @@
 # Notas instalación Slackware 64 current multilib (actualizado y ampliado)
 
-Descargo: Estas son mis notas personales, las preferencias pueden cambiar de usuario en usuario.
+Última actualización: 05/03/25 - Instalación de docker, docker compose y archivebox
+
+Descargo: Estas son mis notas personales, las preferencias pueden cambiar de usuario en usuario. Las instrucciones funcionaron en el momento de escribir estas notas, pero pueden haber cambiado o dejado de funcionar en el futuro. Usar bajo su propio riesgo.
 
 ## ISO
 
@@ -133,6 +135,17 @@ fi
 ### Herramientas
 
 * p7zip (slackpkg)
+
+docker y docker-compose (slackpkg):
+*  Docker requiere `runc` y `containerd`
+
+*  Cambiar permisos: 
+```
+chmod +x /etc/rc.d/rc.docker
+``` 
+para poder ejecutarlo manualmente
+
+* archivebox (docker-compose)
 
 ## Trabajo
 
