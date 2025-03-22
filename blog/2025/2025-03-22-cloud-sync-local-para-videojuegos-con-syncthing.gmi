@@ -1,0 +1,23 @@
+# Cloud sync local para videojuegos
+
+Soy aficionado a los videojuegos, y de día soy usuario de varias plataformas/launchers/tiendas como Steam, GOG y Epic. Pero de noche me pongo la capucha y me encorvo frente a la computadora en la oscuridad para descargar juegos de forma ilegal, y de esta forma desestabilizar el sistema y sembrar el caos en el mundo.
+
+Tengo dos computadoras en casa en donde suelo jugar. Los launchers de las tiendas más populares incluyen un mecanismo de sincronización de partidos guardados, pero para los juegos descargados de contrabando (por los cuales contribuyo al calentamiento global, la desigualdad entre pobres y ricos, el resurgimiento del nazismo, la opresión de las minorías, el trabajo infantil, la deportación de inmigrantes ilegales como mercadería defectuosa, la reducción de derechos civiles y humanos, y la reducción de la efectividad de los antibióticos) no existe una solución similar, o por lo menos yo no la conozco.
+
+Así que me arremangué y decidí probar una idea que tenía dando vueltas desde hacía un tiempo: Implementar mi propio sistema para sincronizar las carpetas de los "saves" a modo de "Cloud sync".
+
+Spoiler: ¡Funcionó! (parcialmente)
+
+## Qué necesitaba
+
+- Poder sincronizar los partidos entre 2 computadoras (potencialmente 3, pero no mucho más).
+
+- La sincronización podía ser sólo local, no necesito poder hacerla "remotamente".
+
+- Que la sincronización fuera automática. Quería eliminar la posibilidad de olvidarme de ejecutar la sincronización.
+
+- Que la sincronización se pudiera hacer sin necesidad de que estén ambas computadoras encendidas al mismo tiempo. Este punto es muy fácil de pasar por alto, pero que si no se tiene en cuenta, puede dar pié a situaciones muy molestas (lo sé, porque mi primer intento no consideró esta posibilidad). Me pasó de estar jugando una noche en una de las máquinas y decir "voy a seguir un rato más en la otra compu y después me voy a dormir". Cierro el juego, espero un par de segundos para darle tiempo al sync de hacer su trabajo, apago la compu, voy a la otra habitación y enciendo la segunda compu, espero unos segundos para que "lleguen" los partidos, abro el juego y... me encuentro con que no tiene los partidos nuevos (obviamente). El paradigma de "la nube" me tiene mal acostumbrado. Por suerte, tengo mi propia nube en casa :)
+
+## Mi solución
+
+La respuesta a todas esos requisitos fue Syncthing.
