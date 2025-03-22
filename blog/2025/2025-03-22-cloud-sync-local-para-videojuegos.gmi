@@ -1,0 +1,79 @@
+# Cloud sync local para videojuegos
+
+Soy aficionado a los videojuegos, y de día soy usuario de varias plataformas/launchers/tiendas como Steam, GOG y Epic. Pero de noche me pongo la capucha y me encorvo frente a la computadora en la oscuridad para descargar juegos de forma ilegal, y de esta forma desestabilizar el sistema y sembrar el caos en el mundo.
+
+Tengo dos computadoras en casa en donde suelo jugar. Los launchers de las tiendas más populares incluyen un mecanismo de sincronización de partidos guardados, pero para los juegos descargados de contrabando (por los cuales contribuyo al calentamiento global, la desigualdad entre pobres y ricos, el resurgimiento del nazismo, la opresión de las minorías, el trabajo infantil, la deportación de inmigrantes ilegales como mercadería defectuosa, la reducción de derechos civiles y humanos, y la reducción de la efectividad de los antibióticos) no existe una solución similar, o por lo menos yo no la conozco.
+
+Así que me arremangué y decidí probar una idea que tenía dando vueltas desde hacía un tiempo: Implementar mi propio sistema para sincronizar las carpetas de los "saves" a modo de "Cloud sync".
+
+## Qué necesitaba
+
+- Poder sincronizar los partidos entre 2 computadoras (potencialmente 3, pero no mucho más).
+
+- La sincronización podía ser sólo local, no necesito poder hacerla "remotamente".
+
+- Que la sincronización fuera automática. Quería eliminar la posibilidad de olvidarme de ejecutar la sincronización.
+
+- Que la sincronización fuera multi plataforma (Linux-Windows). Juego a juegos nativamente en windows y también a esos mismos juegos de Windows pero en Linux, usando distintos métodos según sea necesario (Wine, distintas variantes de Proton, etc).
+
+- Que la sincronización se pudiera hacer sin necesidad de que estén ambas computadoras encendidas al mismo tiempo. Este punto es muy fácil de pasar por alto, pero que si no se tiene en cuenta, puede dar pié a situaciones muy molestas.
+
+## La solución: Syncthing
+
+La instalación, configuración y uso de Syncthing están más allá del alcance de esta humilde publicación. Para más información, visitar:
+
+=> https://syncthing.net/
+
+Ya uso Syncthing para sincronizar carpetas entre 3 o 4 máquinas. Sincronizo algunas carpetas del trabajo entre las computadoras en las que suelo trabajar, otras carpetas personales en donde tengo información más confidencial, documentación, fotos, etc, que comparto sólo entre las máquinas que nunca salen de casa, es decir, las compus de escritorio, etc.
+
+Sin embargo nunca había usado Syncthing en Windows, y no estaba seguro de qué tan bien funcionaba la sincronización de archivos entre las dos plataformas, si habría problemas con los propietarios y permisos de los archivos, con los archivos ocultos, con la codificación, ese tipo de cosas, pero igualmente estaba dispuesto a probar.
+
+La versión corta de la solución para los saves es "configurar la carpeta de los saves en el Syncthing de las dos máquinas y a disfrutar", pero hay un montón de sutilezas muy importantes que hay que considerar, y que de ser ignoradas pueden hacer que todo termine en catástrofe.
+
+## Consideraciones importantes
+
+- Syncthing no tiene un servidor central ni ofrece almacenamiento off-site de ningún tipo. Syncthing es una solución P2P, es decir que si configuro una carpeta compartida entre 2 equipos, y uno de ellos está apagado, la información no va a llegar a su destino hasta que ambos pares hayan estado online simultáneamente durante el tiempo necesario para que se copien los archivos. 
+
+- Si modifico archivos en el equipo A mientras el equipo B está apagado, luego modifico archivos en el equipo B mientras el equipo A está apagado, y finalmente enciendo los dos al mismo tiempo, cuando se intenten sincronizar los archivos, se encontrarán cambios de ambos lados, y dependiendo del tipo de cambios que se hayan hecho, pueden generarse conflictos que no son fáciles de resolver.
+
+```
+  Equipo A ------- Equipo B
+              ^
+              |
+          Conflictos
+```
+
+- Para mitigar la posibilidad de conflictos (o al menos minimizarla lo máximo posible), la solución ideal es tener un tercer equipo que sirva de "nube", básicamente un equipo que esté siempre encendido. De esta forma, en cuanto un equipo genere cambios en la carpeta compartida, independientemente de que el otro equipo esté encendido o no, el servidor obtendrá los cambios y los guardará hasta que el otro equipo se encuentre online y sincronice los archivos. Cabe destacar que además de sincronizar con el servidor, ambos nodos también sincronizan entre sí, de esta forma existen distintos caminos por los cuáles puede llegar la información a su destino.
+
+```
+         Servidor
+           /   \
+          /     \
+  Equipo A ----- Equipo B
+```
+
+- Supongamos que ya tengo el juego instalado en ambas máquinas y quiero configurar la carpeta de los saves. Tengo que tener mucho cuidado de no causar conflictos o de sobreescribir archivos erroneamente. Hay distintos escenarios distintos con distintas soluciones. Si ya jugué en paralelo en ambos equipos, voy a tener que elegir cuál de los dos conservar, ya que es muy improbable que pueda fusionar ambos partidos. Si sólo jugué en uno de los equipos, tengo que primero configurar la carpeta en ese equipo, compartirla con el equipo donde no tengo saves, y configurar la carpeta vacía como carpeta para recibir los archivos compartidos. Si lo hiciera al revés (no hice la prueba), creo que es posible que se "sobreescriba" la carpeta de los saves con la carpeta vacía.
+
+- En mi caso, yo ya cuento con un servidor doméstico corriendo en una Raspberry Pi 4 que uso principalmente como servidor de streaming con Jellyfin, pero que también uso como servidor de Syncthing, así que yo ya contaba con el 90% de la solución ya implementada.
+
+## Resultados
+
+Hasta que llegué a la configuración final, me topé con un par de problemas:
+
+- La primera vez intenté configurar solamente 2 computadoras. Lo que me pasó fue eso de que al no estar ambos equipos encendidos al mismo tiempo, la sincronización no funcionaba siempre como yo esperaba.
+
+- Luego agregué el servidor como tercer nodo, y ese problema se solucionó.
+
+- Tuve que tener muuucho cuidado a la hora de configurar las carpetas, y aún así, en una ocasión accidentamente sobreescribí los datos con una carpeta que contenía saves antiguos, es decir, lo hice al revés. Por suerte, Syncthing ofrece algunos mecanismos de backup en donde guarda algunas versiones en un historial que se puede restaurar, y gracias a eso pude revertir ese error.
+
+- El primer juego que intenté sincronizar fue Last Epoch, y por más que lo intenté y lo intenté, no logré que funcione. Mi sospecha es que cuando se crea un personaje y se genera progreso en el juego, no se modifican sólo archivos en la carpeta de saves, sino que el personaje se guarda en algún otro lado que no logré descubrir. Después de perder bastante tiempo intentándolo, me di por vencido.
+
+- El segundo juego que intenté sincronizar fue Cyberpunk 2077 y fue todo un éxito. En este caso la computadora A es un Slackware corriendo el juego de Windows con conty.sh -> Lutris -> Proton, y la computadora B es un Windows 10 con el juego de Windows instalado normalmente. No hubo ningún tipo de problema con la sincronización entre 2 plataformas distintas.
+
+- Este experimento me sirvió para darme cuenta de algo que en pasado me había causado una enorme desorientación. Cuando configuro un juego en Lutris, puedo elegir qué runner usar. Puedo usar una versión normal de Wine, o puedo usar alguna de las variantes de Proton. Bueno, me ocurrió de empezar a jugar el juego con Wine, y más adelante cambiar a Proton y encontrarme con que había "perdido" todos los partidos guardados. en realidad no los había perdido, sino que Wine y Proton guardan los archivos en una ruta sutilmente distinta dentro del prefix de Wine. Wine usa la ruta "normal" que usaría el programa en Windows (C:\Users\Nombreusario\Saved games, por ejemplo), pero Proton crea un enlace simbólico ???
+
+## Conclusión
+
+Definitivamente voy a seguir probando este método de cloud sync con futuros juegos, y aunque no tenga un éxito del 100%, sigue siendo una solución infinitamente más viable que copiar los archivos manualmente entre un equipo y otro, y cuando está bien configurado, no tiene nada que enviarle al cloud sync de las plataformas como Steam.
+
+Espero que le sirva a alguien. Si tienen comentarios o sugerencias, pueden dejarme un mensaje en Mastodon.

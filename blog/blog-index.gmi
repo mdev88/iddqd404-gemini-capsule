@@ -4,6 +4,7 @@ Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escri
 
 ## Publicaciones
 
+=> 2025/2025-03-22-cloud-sync-local-para-videojuegos.gmi Cloud sync local para videojuegos
 => 2025/2025-03-04-notas-instalacion-slackware-multilib-actualizado-y-ampliado.gmi 2025-03-04 Notas instalacion slackware multilib actualizado y ampliado
 => 2025/2025-03-03-notas-instalacion-slackware-multilib.gmi	2025-03-03 Notas instalacion slackware multilib (obsoleto)
 => 2024/2024-03-01-nuevos-links.gmi	2024-03-01 Nueva sección de links
