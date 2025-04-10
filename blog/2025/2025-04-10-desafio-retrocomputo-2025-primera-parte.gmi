@@ -91,3 +91,6 @@ Las pruebas hasta el momento salieron mejor de lo que me imaginaba. Creo tener u
 
 Salvo el mail y Whatsapp, creo que todo lo que me propuse pude hacerlo cómodamente.
 
+Voy a ver si puedo instalar el cliente de Protonmail para probar bajar los mails con algún cliente de mail, pero ya me estoy resignando a que no voy a poder.
+
+Por otro lado, me está tentando mucho la idea de ajustar todavía más el cinturón e intentar hacer el desafío en modo hardcore, usando solamente 256 megas de RAM, o incluso 128.
