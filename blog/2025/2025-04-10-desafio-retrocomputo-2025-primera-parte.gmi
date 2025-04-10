@@ -1,0 +1,93 @@
+# Desafío Retrocómputo 2025 - Primera parte
+
+Decidí sumarme al Old Computer Challenge, propuesto desde hace unos años por Solène, pero lancé la propuesta en ciertos grupos que frecuento de habla hispana, ya que me pareció que era interesante traer este desafío a nuestro idioma.
+
+Para quienes no estén familiarizados, estas son las entregas del challenge originales:
+
+=> https://dataswamp.org/~solene/tag-oldcomputerchallenge.htmlhttps://dataswamp.org/~solene/tag-oldcomputerchallenge.html
+
+Mi versión de la propuesta está detallada en el siguiente posteo del blog de Hackfun:
+
+=> https://blog.hackfunrosario.com/2025/03/25/desaf%C3%ADo-retroc%C3%B3mputo-2025.html
+
+En resumen, se trata de usar una computadora con recursos muy limitados durante un mes, y ver cuáles de nuestras actividades habituales podemos realizar en ese equipo. Ésto nos llevará quizás a probar un OS más liviano, buscar alternativas de software, configuraciones y optimizaciones, y también probablemente, tener que renunciar a algunas cosas.
+
+No se trata de abandonar toda modernidad y obligarse a usar el equipo antiguo, sino usarlo como un experimento y un juego. No dejen de trabajar por no poder hacerlo en la máquina vieja :D
+
+## Cosas que me gustaría poder hacer lo mejor/más cómodamente posible:
+
+* Navegar por Internet razonablemente bien
+* Poder revisar mi mail (Protonmail)
+* Poder acceder a mi gestor de contraseñas (Bitwarden)
+* Navegar por Gemini
+* Leer feeds RSS/Atom, etc
+* Escuchar música
+* Poder comunicarme por algún tipo de mensajería, idealmente Telegram y Whatsapp
+* Poder manejar archivos locales
+* Poder ver y editar archivos de texto, markdown, PDF, etc.
+* Poder enviar y recibir archivos / Sincronizar archivos y carpetas
+* Trabajar con repositorios Dit.
+* Poder jugar a algunos videojuegos
+
+## Mi setup
+
+Inicialmente, decidí probar el siguiente setup:
+
+* 1 CPU
+* 512 Mb de RAM
+* OS: Slackware Linux 15 de 64 bits (es el sistema que ya tenía instalado)
+* Session manager gráfico: Ninguno. Inicio X con el comando startx
+* Window Manager: jwm
+
+Si bien mi compu tiene 2 cores y 2GB de RAM, usé algunos trucos para forzar el uso de sólo una CPU y medio giga de ram. Publiqué algunas instrucciones en el foro de Cybercirujas. Dejo los links para no duplicar todo:
+
+=> https://cybercirujas.rebelion.digital/foro/viewtopic.php?t=444&sid=f98034ab7fb9a5b0307c29df84c1aaf8
+
+=> https://cybercirujas.rebelion.digital/foro/viewtopic.php?t=443&sid=f98034ab7fb9a5b0307c29df84c1aaf8
+
+## Primeras impresiones y pruebas
+
+Durante la primera etapa, mientras probaba cómo reducir la cantidad de cores y memoria, noté una gran diferencia al pasar de 1GB a 512Mb de RAM. Cambiar de 2 cores a 1, o de 2GB a 1, no me pareció un cambio tan dramático, pero claramente al acercarse a los 512 de RAM, la cosa se empieza a poner espesa. Tarda notablemente más en arrancar, y hay que tener mucho más cuidado a la hora de elegir el WM y los programas que se usan, especialmente en simultáneo.
+
+Sin embargo también logré algunos resultados interesantes:
+
+* Firefox o Librewolf me parecieron prácticamente inusables, pero recordé la existencia de Palemoon, y con ese navegador vengo muy bien. Fueron muy pocas las páginas que no pude cargar, o que cargaron con algún problema para renderizar. Incluso pude loguearme a Github y acceder a un repositorio privado que pude clonar para poder trabajar en esta máquina (si, estoy actualizando este gemlog desde la compu en cuestión :D)
+* Lagrange, el navegador para Gemini que más me gusta, funciona muy bien.
+* Como gestor de archivos estoy usando PCmanFM, con buenos resultados.
+* Como parte del desafío decidimos usar IRC para comunicarnos en tiempo real. Para eso estuve usando Pidgin, y me pareció razonablemente liviano y funcional para mis necesidades. También he usado weechat como cliente IRC por cli.
+* Logré usar el cliente de escritorio de Telegram, y desactivando las animaciones, carga automática de imágenes/gits/audios/videos, y poniendo que use las decoraciones de ventanas del sistema en lugar de las propias de la aplicación, funciona sorprendentemente bien!
+* Uso Syncthing para sincronizar archivos entre algunas computadoras. Funcionó, pero creo que consume demasiada memoria como para tenerlo andando todo el tiempo, así que decidí dejarlo con arranque manual, lo cual es un poco peligroso, pero tendré que vivir con eso. Alternativamente, copié algunos archivos desde otras computadoras usando el clásico scp.
+* Pada editar textos y archivos de configuración suelo usar nano o en su defecto Leafpad, un editor gráfico bastante liviano. También probé Nedit, que es super liviano, pero aparentemente sólo soporta codificaciones ISO, no UTF, así que descartado.
+* Decidí probar xterm como terminal gráfica, ya que otras terminales que he usado me parecieron muy pesadas. Apligué algunas configuraciones en el archivo .Xdefaults para que se vea visualmente más agradable:
+
+```
+XTerm*Background:black
+XTerm*Foreground:white
+XTerm*renderFont: true
+#XTerm*faceName: Mx437 EverexME 6x16
+XTerm*faceName: Inclusive Sans Regular
+XTerm*faceSize: 14
+XTerm*SaveLines: 2000
+XTerm*RightScrollBar: true
+XTerm*ScrollBar: true
+XTerm*VT100.Translations: #override \
+      Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\ 
+      Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\ 
+      Shift<Btn1Down>: select-start() \n\ 
+      Shift<Btn1Motion>: select-extend() \n\ 
+      Shift<Btn1Up>: select-end(CLIPBOARD) \n\
+
+```
+
+* Logré acceder a Bitwarden desde la web. Es una aplicación web pesada, pero usable.
+* Logré entrar a Protonmail y fue realmente una experiencia horrorosa. Muy muy lento, y para colmo para poder loguearme necesité abrir simultáneamente Bitwarden, lo que empeoró la situación todavía más. Una vez dentro del mail, luego de varios minutos de cargar, respondió super lento, se trabó todo cuando se ve que encontró un mail nuevo que llegó justo en ese momento, etc. Sin embargo pude abrir un mail de una newsletter y leerlo, con paciencia. Supongo que para una emergencia puede servir, pero no creo que me ponga a revisar mi mail seguido en esta máquina. El problema con Protonmail es que no tiene IMAP/POP/SMTP, sino que para poder usar un cliente de mail hay que además usar una aplicación de escritorio que hace de Proxy y encripta el tráfico. Si mal no recuerdo es una aplicación hecha con Electron. Eventualmente voy a probarla, pero no le tengo mucha fe. 
+* No logré usar Whatsapp web desde Palemoon. Me tiró un error de SSL. Podría haber intentado usar Librewolf para abrirlo, pero no quiero que explote la computadora, así que no me jode seguir usando Whatsapp desde el teléfono y listo.
+* Logré escuchar música desde mi servidor doméstico de streaming usando Jellyfin, desde la interfaz web. Sin problemas y funcionó mucho mejor de lo que me imaginaba.
+* Pude leer mis feeds sin problema usando mi lector de feeds alojado en mi servidor hogareño, Miniflux.
+
+## Primeras conclusiones
+
+Las pruebas hasta el momento salieron mejor de lo que me imaginaba. Creo tener un setup muy cómodo (para mi) y que funciona muy bien, dentro de lo esperable para una máquina de estas características.
+
+Salvo el mail y Whatsapp, creo que todo lo que me propuse pude hacerlo cómodamente.
+

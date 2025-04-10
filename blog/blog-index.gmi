@@ -4,6 +4,7 @@ Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escri
 
 ## Publicaciones
 
+=> 2025/2025-04-10-desafio-retrocomputo-2025-primera-parte.gmi Desafío Retrocómputo 2025 - Primera parte
 => 2025/2025-03-22-cloud-sync-local-para-videojuegos.gmi 2025-03-22 Cloud sync local para videojuegos
 => 2025/2025-03-04-notas-instalacion-slackware-multilib-actualizado-y-ampliado.gmi 2025-03-04 Notas instalacion slackware multilib actualizado y ampliado
 => 2025/2025-03-03-notas-instalacion-slackware-multilib.gmi	2025-03-03 Notas instalacion slackware multilib (obsoleto)
