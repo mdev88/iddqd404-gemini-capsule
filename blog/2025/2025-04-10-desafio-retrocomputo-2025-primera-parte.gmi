@@ -86,6 +86,7 @@ XTerm*VT100.Translations: #override \
 * Pude entrar a Mastodon por la web oficial, pero también probé el cliente web alternativo brutaldon.org como alternativa más liviana.
 * Logré escuchar música desde mi servidor doméstico de streaming usando Jellyfin, desde la interfaz web. Sin problemas y funcionó mucho mejor de lo que me imaginaba.
 * Pude leer mis feeds sin problema usando mi lector de feeds alojado en mi servidor hogareño, Miniflux.
+* Pude jugar al Brutal Doom (mod del Doom) usando zdoom, un engine para Linux que está descontinuado pero es perfectamente usable y es super liviano. Me bajé los WADs de archive.org y pude jugar al Doom, Doom II y Heretic casi a 60fps. También pude jugar a un juego web de estrategia al que juego con unxs amigxs llamado planets.nu. Me faltaría probar algunos emuladores de retroconsolas a ver cómo van.
 
 ## Primeras conclusiones
 
