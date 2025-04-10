@@ -27,7 +27,7 @@ No se trata de abandonar toda modernidad y obligarse a usar el equipo antiguo, s
 * Poder manejar archivos locales
 * Poder ver y editar archivos de texto, markdown, PDF, etc.
 * Poder enviar y recibir archivos / Sincronizar archivos y carpetas
-* Trabajar con repositorios Dit.
+* Trabajar con repositorios Git.
 * Poder jugar a algunos videojuegos
 
 ## Mi setup
@@ -58,8 +58,8 @@ Sin embargo también logré algunos resultados interesantes:
 * Como parte del desafío decidimos usar IRC para comunicarnos en tiempo real. Para eso estuve usando Pidgin, y me pareció razonablemente liviano y funcional para mis necesidades. También he usado weechat como cliente IRC por cli.
 * Logré usar el cliente de escritorio de Telegram, y desactivando las animaciones, carga automática de imágenes/gits/audios/videos, y poniendo que use las decoraciones de ventanas del sistema en lugar de las propias de la aplicación, funciona sorprendentemente bien!
 * Uso Syncthing para sincronizar archivos entre algunas computadoras. Funcionó, pero creo que consume demasiada memoria como para tenerlo andando todo el tiempo, así que decidí dejarlo con arranque manual, lo cual es un poco peligroso, pero tendré que vivir con eso. Alternativamente, copié algunos archivos desde otras computadoras usando el clásico scp.
-* Pada editar textos y archivos de configuración suelo usar nano o en su defecto Leafpad, un editor gráfico bastante liviano. También probé Nedit, que es super liviano, pero aparentemente sólo soporta codificaciones ISO, no UTF, así que descartado.
-* Decidí probar xterm como terminal gráfica, ya que otras terminales que he usado me parecieron muy pesadas. Apligué algunas configuraciones en el archivo .Xdefaults para que se vea visualmente más agradable:
+* Para editar textos y archivos de configuración suelo usar nano o en su defecto Leafpad, un editor gráfico bastante liviano. También probé Nedit, que es super liviano, pero aparentemente sólo soporta codificaciones ISO, no UTF, así que descartado.
+* Decidí probar xterm como terminal gráfica, ya que otras terminales que he usado me parecieron muy pesadas. Apliqué algunas configuraciones en el archivo .Xdefaults para que se vea visualmente más agradable:
 
 ```
 XTerm*Background:black
