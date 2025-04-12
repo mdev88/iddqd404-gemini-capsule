@@ -114,13 +114,11 @@ keycode 171 = greater
 
 Hice varios tweaks a jwm para adaptarlo a mis necesidades y gustos. Si bien tiene varias configuraciones que varían según el sistema o las aplicaciones instaladas, pueden usarlo de referencia:
 
-=> https://raw.githubusercontent.com/mdev88/configs/refs/heads/main/slackware-current/.jwmrc?token=GHSAT0AAAAAADCA5B23G4EZTAAPE5IQQAWKZ72XELA .jwmrc en Github
+=> gemini://texto-plano.xyz/iddqd404/storage/.jwmrc .jwmrc 
 
 ### Deshabilitar servicios innecesarios
 
 Siempre conviene deshabilitar servicios que no se usen frecuentemente. En mi caso, slackware tiene el comando 
 
-=> /media/screenshot-pkgtool.png Captura de pantalla de pkgtool
-
-### Compartir rápidamente archivos, imágenes, etc
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-pkgtool.png Captura de pantalla de pkgtool
 
