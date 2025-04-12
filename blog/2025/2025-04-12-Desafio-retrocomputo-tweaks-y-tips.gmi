@@ -10,11 +10,15 @@ Ya mencioné algunas elecciones que hice sobre software de bajo consumo, pero a 
 
 Noté que la mayoría de los widgets del tray para conectar al WiFi consumen bastantes recursos, y no me parece que tenga sentido estar ejecutándolos todo el tiempo, siendo que una vez que me conecto a la red, no tengo que andar tocando nada.
 
-Por eso me gustó 'nmtui', una aplicación ncurses para gestionar las conexiones WiFi.
+Por eso me gustó 'nmtui', un cliente ncurses de NetworkManager para gestionar las conexiones WiFi:
+
+=> https://github.com/NetworkManager/NetworkManager?tab=readme-ov-file#how-to-use-it
 
 ### Widget de volumen
 
 jwm no trae un tray propio, pero soporta aplicaciones que muestran iconos en el tray. Para el control de volumen, 'xmixer' me resultó liviana y me da lo que necesito... controlar el volumen.
+
+=> https://github.com/cjacker/xmixer
 
 ### Terminal
 
@@ -22,9 +26,9 @@ XTerm parece ser la terminal más liviana que al mismo tiempo permite cambiar un
 
 ### Navegador y sitios útiles
 
-Mi elección para el día a día fue Palemoon, que es un fork de una versión antigua de Firefox, antes de que se volviera el monstruo que es hoy. Palemoon sigue siendo mantenido, así que se va manteniendo bastante al día con las tecnologías y requerimientos de la web de hoy, aunque es posible que algunos sitios puntuales no carguen correctamente. Todavía no me pasó nunca, pero sé que es una posibilidad.
+Mi elección para el día a día fue 'Palemoon', que es un fork de una versión antigua de Firefox, antes de que se volviera el monstruo que es hoy. Palemoon sigue siendo mantenido, así que se va manteniendo bastante al día con las tecnologías y requerimientos de la web de hoy, aunque es posible que algunos sitios puntuales no carguen correctamente. Todavía no me pasó nunca, pero sé que es una posibilidad.
 
-Mi buscador predilecto es DuckDuckGo, que ofrece una versión liviana, que recomiendo usar en equipos antiguos:
+Mi buscador predilecto es 'DuckDuckGo', que ofrece una versión liviana, que recomiendo usar en equipos antiguos:
 
 => https://html.duckduckgo.com
 
@@ -42,13 +46,17 @@ Hace poco me crucé con esta especie de foro o clon de Reddit pensado para la sm
 
 ### Gestor de archivos
 
-Un gestor de archivos que ofrece un buen balance entre consumo de recursos y funcionalidad es PCmanFM. Es bastante similar a Thunar, con un par de cosas menos. 
+Un gestor de archivos que ofrece un buen balance entre consumo de recursos y funcionalidad es 'PCmanFM'. Es bastante similar a Thunar, con un par de cosas menos. 
 
-Pero también encontré Rox-filer (o RoxFM), que es bastante más liviano (y limitado). Si lo que necesitás es abrir, copiar o mover archivos o carpetas, es muy buena opción. Tambié ofrece la posibilidad de ejecutar acciones o comandos sobre archivos puntuales, pero no mucho más que eso.
+Pero también encontré 'Rox-filer' (o RoxFM), que es bastante más liviano (y limitado). Si lo que necesitás es abrir, copiar o mover archivos o carpetas, es muy buena opción. Tambié ofrece la posibilidad de ejecutar acciones o comandos sobre archivos puntuales, pero no mucho más que eso.
 
 => https://github.com/rox-desktop/rox-filer
 
-Y no puedo dejar de mencionar al clásico Midnight Commander, el histórico clon de Norton Commander de DOS. Abrir terminal, ejecutar 'nc' y a disfrutar (?)
+Y no puedo dejar de mencionar al clásico 'Midnight Commander', el histórico clon de Norton Commander de DOS. Abrir terminal, ejecutar 'nc' y a disfrutar (?)
+
+### Comprimir/descomprimir archivos
+
+Más allá de los comandos típicos 'tar', 'unzip', 'unrar', etc, estoy usando 'xarchiver' que es una aplicación liviana para abrir y gestionar archivos comprimidos.
 
 ### Editor de texto
 
@@ -74,6 +82,16 @@ Creía que 'Viewnior' era liviano, pero no amigo, visor de imágenes liviano de 
 
 Casi siempre necesito hacer capturas de una porción de la pantalla, así que suelo usar 'xfce4-screenshooter'. Pero hace poco me recomendaron 'scrot', que es un comando que simplemente captura toda la pantalla y guarda la imágen en el home del usuario. Super liviano y simple.
 
+## Videojuegos y emuladores
+
+Además de zdoom, uso un emulador para NES muy liviano llamado 'nesl'. Es un comando al que hay que pasarle como argumento el nombre de la ROM que queremos correr. Adicionalmente se puede especificar el escalado. En mi caso, para hacer un escalado x3 usando nearest neighbour, ejecuto:
+
+```
+nesl -c 3 archivo.rom
+```
+Web de nesl:
+
+=> https://github.com/majestic53/nesl
 
 ## Tweaks y tips
 
@@ -122,3 +140,6 @@ Siempre conviene deshabilitar servicios que no se usen frecuentemente. En mi cas
 
 => gemini://texto-plano.xyz/iddqd404/media/screenshot-pkgtool.png Captura de pantalla de pkgtool
 
+## Conclusiones
+
+Eso es todo por el momento. Con estas aplicaciones y configuraciones estoy pudiendo sacarle muy buen provecho a esta máquina con 1GB y 512 de RAM.
