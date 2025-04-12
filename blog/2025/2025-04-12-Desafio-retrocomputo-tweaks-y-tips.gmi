@@ -12,7 +12,7 @@ Noté que la mayoría de los widgets del tray para conectar al WiFi consumen bas
 
 Por eso me gustó 'nmtui', un cliente ncurses de NetworkManager para gestionar las conexiones WiFi:
 
-=> https://github.com/NetworkManager/NetworkManager?tab=readme-ov-file#how-to-use-it
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-nmtui.png Captura de pantalla de nmtui
 
 ### Widget de volumen
 
@@ -50,6 +50,10 @@ Un gestor de archivos que ofrece un buen balance entre consumo de recursos y fun
 
 Pero también encontré 'Rox-filer' (o RoxFM), que es bastante más liviano (y limitado). Si lo que necesitás es abrir, copiar o mover archivos o carpetas, es muy buena opción. Tambié ofrece la posibilidad de ejecutar acciones o comandos sobre archivos puntuales, pero no mucho más que eso.
 
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-rox.png Captura de pantalla de Rox
+
+Web de Rox:
+
 => https://github.com/rox-desktop/rox-filer
 
 Y no puedo dejar de mencionar al clásico 'Midnight Commander', el histórico clon de Norton Commander de DOS. Abrir terminal, ejecutar 'nc' y a disfrutar (?)
@@ -63,6 +67,10 @@ Más allá de los comandos típicos 'tar', 'unzip', 'unrar', etc, estoy usando '
 Parece algo trivial, pero muchos de los editores de texto gráficos que creía livianos, como Mousepad, Leafpad, gEdit, etc, no lo son tanto.
 
 Por suerte encontré 'xnedit', que parece un clon de notepad.exe, y es significativamente más liviano que los otros. 
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-xnedit.png Captura de pantalla de XNedit
+
+Web de xnedit:
 
 => https://github.com/unixwork/xnedit
 
@@ -89,6 +97,10 @@ Además de zdoom, uso un emulador para NES muy liviano llamado 'nesl'. Es un com
 ```
 nesl -c 3 archivo.rom
 ```
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-nesl.png Captura de pantalla de nesl
+
+
 Web de nesl:
 
 => https://github.com/majestic53/nesl
