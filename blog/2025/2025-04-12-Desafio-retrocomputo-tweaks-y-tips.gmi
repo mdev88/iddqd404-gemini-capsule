@@ -1,0 +1,99 @@
+# Desafío Retrocómputo - Tweaks y tips
+
+En el desafío, unas de las cosas más importantes a elegir son el OS y el Window Manager o Desktop Environment, ya que son las que impactan directamente en la sobrecarga de recursos, pero hay un montón de otros factores que se pueden ajustar para ir robándole un poquito más de memoria y rendimiento acá y allá.
+
+## Selección de software
+
+Ya mencioné algunas elecciones que hice sobre software de bajo consumo, pero a continuación hago un resumen y agrego más cosas que estuve probando
+
+### Conexión a WiFi
+
+Noté que la mayoría de los widgets del tray para conectar al WiFi consumen bastantes recursos, y no me parece que tenga sentido estar ejecutándolos todo el tiempo, siendo que una vez que me conecto a la red, no tengo que andar tocando nada.
+
+Por eso me gustó 'nmtui', una aplicación ncurses para gestionar las conexiones WiFi.
+
+### Widget de volumen
+
+jwm no trae un tray propio, pero soporta aplicaciones que muestran iconos en el tray. Para el control de volumen, 'xmixer' me resultó liviana y me da lo que necesito... controlar el volumen.
+
+### Terminal
+
+XTerm parece ser la terminal más liviana que al mismo tiempo permite cambiar un poco el estilo para que no me hagan sangrar los ojos. Texto blanco sobre fondo negro? Si, gracias.
+
+### Navegador y sitios útiles
+
+Mi elección para el día a día fue Palemoon, que es un fork de una versión antigua de Firefox, antes de que se volviera el monstruo que es hoy. Palemoon sigue siendo mantenido, así que se va manteniendo bastante al día con las tecnologías y requerimientos de la web de hoy, aunque es posible que algunos sitios puntuales no carguen correctamente. Todavía no me pasó nunca, pero sé que es una posibilidad.
+
+Mi buscador predilecto es DuckDuckGo, que ofrece una versión liviana, que recomiendo usar en equipos antiguos:
+
+=> https://html.duckduckgo.com
+
+Me ha pasado de necesitar visitar alguna página para descargar algo, pero la página en cuestión es innecesariamente pesada, porque tiene un slider con imágenes enormes, o efectos con Javascript, etc. En algún caso me sirvió usar Frogfind como proxy para acceder a una versión simplificada de la página: 
+
+=> http://frogfind.com
+
+El cliente web de Mastodon está bastante bien, pero encontré una alternativa más liviana, que opcionalmente puede funcionar sin Javascript:
+
+=> https://brutaldon.org
+
+Hace poco me crucé con esta especie de foro o clon de Reddit pensado para la small web. Hay categorías medio turbias, pero se habla mucho de retrocomputación, uso responsable de recursos y otros temas relevantes:
+
+=> http://bluedwarf.top
+
+### Gestor de archivos
+
+Un gestor de archivos que ofrece un buen balance entre consumo de recursos y funcionalidad es PCmanFM. Es bastante similar a Thunar, con un par de cosas menos. 
+
+Pero también encontré Rox-filer (o RoxFM), que es bastante más liviano (y limitado). Si lo que necesitás es abrir, copiar o mover archivos o carpetas, es muy buena opción. Tambié ofrece la posibilidad de ejecutar acciones o comandos sobre archivos puntuales, pero no mucho más que eso.
+
+=> https://github.com/rox-desktop/rox-filer
+
+Y no puedo dejar de mencionar al clásico Midnight Commander, el histórico clon de Norton Commander de DOS. Abrir terminal, ejecutar 'nc' y a disfrutar (?)
+
+### Editor de texto
+
+Parece algo trivial, pero muchos de los editores de texto gráficos que creía livianos, como Mousepad, Leafpad, gEdit, etc, no lo son tanto.
+
+Por suerte encontré 'xnedit', que parece un clon de notepad.exe, y es significativamente más liviano que los otros. 
+
+=> https://github.com/unixwork/xnedit
+
+También encontré editor de texto con formato 'Ted' que puede guardar en distintos formatos, incluyendo rtf, pdf y epub.
+
+### Visor de PDF
+
+La alternativa más liviana que encontré fue 'xpdf'. Creo que no se puede ir más básico que eso.
+
+### Visor de imágenes
+
+Creía que 'Viewnior' era liviano, pero no amigo, visor de imágenes liviano de verdad es 'feh'
+
+=> https://feh.finalrewind.org
+
+### Capturador de pantalla
+
+Casi siempre necesito hacer capturas de una porción de la pantalla, así que suelo usar 'xfce4-screenshooter'. Pero hace poco me recomendaron 'scrot', que es un comando que simplemente captura toda la pantalla y guarda la imágen en el home del usuario. Super liviano y simple.
+
+
+## Tweaks y tips
+
+### Telegram desktop
+
+Para mejorar el rendimiento, recomiendo deshabilitar todas las animaciones y la descarga y reproducción automática de todos los tipos de mensajes. También conviene deshabilitar la decoración de ventana propia de Telegram y usar la del sistema.
+
+### Palemoon
+
+No puedo vivir si un plugin que convierte las webs a modo oscuro. En Firefox y derivados uso DarkReader pero no está disponible para Palemoon, pero encontré Swarth, que funciona de manera bastante similar.
+
+=> https://projectfresco.github.io/addons/get?addon=swarth
+
+Pensaba que no había uBlock para Palemoon, pero si existe:
+
+=> https://projectfresco.github.io/addons/get?addon=ublock-origin
+
+### Bloqueo de publicidades
+
+Si bien puedo usar uBlock en el navegador, prefiero hacer el bloqueo a nivel del sistema, editando el archivo /etc/hosts y agregar esta lista de bloqueo:
+
+=> https://someonewhocares.org/hosts/
+
