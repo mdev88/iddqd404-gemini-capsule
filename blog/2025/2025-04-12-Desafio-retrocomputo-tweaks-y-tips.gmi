@@ -97,3 +97,30 @@ Si bien puedo usar uBlock en el navegador, prefiero hacer el bloqueo a nivel del
 
 => https://someonewhocares.org/hosts/
 
+### Teclas que no funcionan
+
+Esta compu tiene algunas teclas que no funcionan, ESC, < y >.
+
+Para solucionarlo, edité el archivo .Xmodmap y agregué lo siguiente para mapear esas teclas en otras. Para ESC usé la tecla Pausa, y para las otras, usé dos teclas multimedia que no uso nunca.
+
+```
+keycode 127 = Escape
+keycode 173 = less
+keycode 171 = greater
+
+```
+
+### jwm
+
+Hice varios tweaks a jwm para adaptarlo a mis necesidades y gustos. Si bien tiene varias configuraciones que varían según el sistema o las aplicaciones instaladas, pueden usarlo de referencia:
+
+=> https://raw.githubusercontent.com/mdev88/configs/refs/heads/main/slackware-current/.jwmrc?token=GHSAT0AAAAAADCA5B23G4EZTAAPE5IQQAWKZ72XELA .jwmrc en Github
+
+### Deshabilitar servicios innecesarios
+
+Siempre conviene deshabilitar servicios que no se usen frecuentemente. En mi caso, slackware tiene el comando 
+
+=> media/screenshot-pkgtool.png Captura de pantalla de pkgtool
+
+### Compartir rápidamente archivos, imágenes, etc
+
