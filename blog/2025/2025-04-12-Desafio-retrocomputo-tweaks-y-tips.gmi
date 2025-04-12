@@ -120,7 +120,7 @@ Hice varios tweaks a jwm para adaptarlo a mis necesidades y gustos. Si bien tien
 
 Siempre conviene deshabilitar servicios que no se usen frecuentemente. En mi caso, slackware tiene el comando 
 
-=> media/screenshot-pkgtool.png Captura de pantalla de pkgtool
+=> /media/screenshot-pkgtool.png Captura de pantalla de pkgtool
 
 ### Compartir rápidamente archivos, imágenes, etc
 
