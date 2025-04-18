@@ -20,7 +20,7 @@ Para poder ver los cambios rápidamente durante las modificaciones, sin tener qu
 Hace un tiempo me pasaron el tip de levantar un servidor web simple localmente con este comando de python:
 
 ```
-python3 -m gttp.server
+python3 -m http.server
 ```
 
 Corriendo ese comando en el directorio raíz de la web, puedo ver el sitio en vivo entrando a localhost:8000.
@@ -31,9 +31,9 @@ Corriendo ese comando en el directorio raíz de la web, puedo ver el sitio en vi
 
 Para editar los distintos archivos, alterné entre nano en una terminal, y XNedit. No tuve un criterio muy claro, simplemente a veces estaba navegando entre carpetas en una terminal y necesitaba editar un archivo y lo hacía rápidamente desde nano. Otras veces necesitaba editar un archivo puntual y decidía abrirlo desde XNedit.
 
-A pesar de tener la configuración correcta (supuestamente) de XTerm para poder copiar y pegar texto desde y hacia la consola, no siempre me funciona, o no funciona del todo bien, así que en casos cuando necesito estar copiando bloques de código entre archivos, o desde alguna web, termino usando XNedit.
+A pesar de tener la configuración correcta (supuestamente) de XTerm para poder copiar y pegar texto desde y hacia la consola, no siempre me funciona, o no del todo bien, así que en casos cuando necesito estar copiando bloques de texto entre archivos, o desde alguna web, termino usando XNedit.
 
-XNedit me gusta mucho, es muy liviano, tiene syntax highlighting y se siente cómodo de usar. Algo que em di cuenta tarde, es que se pueden cambiar los colores y de alguna forma cambiarle el "tema" para hacerlo más amigable a la vista.
+XNedit me gusta mucho, es muy liviano, tiene syntax highlighting y se siente cómodo de usar. Algo que descubrí tarde, es que se pueden cambiar los colores para hacerlo más amigable a la vista.
 
 => gemini://texto-plano.xyz/iddqd404/media/screenshot-xnedit.png Captura de pantalla de XNedit editando este mismo post
 
@@ -43,15 +43,15 @@ Algo que no pude resolver todavía (tampoco le dediqué mucho tiempo) es poder u
 
 Como ya comenté varias veces, el navegador que mejor resultados me estuvo dando es Palemoon. Tanto para ver los cambios en local como cuando los subía, usé el modo incognito para ver la versión "real" y no una versión en caché, aunque sospecho que hay algún bug en ese modo, porque a pesar de abrir una ventana nueva en modo incognito, a veces seguía viendo una versión desactualizada.
 
-Cuando noté eso, lo que hice fue borrar manualmente los datos almacenados en el navegador antes de recargar la página y listo.
+Cuando noté eso, lo que hice fue borrar manualmente los datos almacenados en el navegador antes de recargar la página y problema resuelto.
 
 ### Programar
 
 Después de crear la sección del blog en mi sitio, quería alguna herramienta para facilitar la creación de los posts. Mi escenario ideal era poder redactar los posts en Markdown, y a la hora de publicar, convertirlos a HTML, siguiendo los estilos de mi web.
 
-Para eso, lo que hice fue crear un archivo HTML que sirva de "template" de un post, conteniendo las cabeceras y los estilos de mi sitio. En el cuerpo del archivo, donde iría el contenido del post propiamente dicho, puse un placeholder que llamé "post-content" (más adelante explico por qué).
+Para eso, lo que hice fue crear un archivo HTML que sirva de "template" para cada nuevo post, incluyendo las cabeceras y los estilos de mi sitio. En el cuerpo del archivo, donde iría el contenido del post propiamente dicho, puse un placeholder que llamé "post-content" (más adelante explico por qué).
 
-Para crear cada post, creo un archivo Markdown con el contenido deseado. Y finalmente, hice uns cript shell que toma el archivo Markdown, lo convierte a HTML, y luego toma el template y reemplaza el placeholder por el contenido del HTML generado. Parece complicado pero realmente no lo es. Serán 10 líneas de código, no las más elegantes, pero funciona.
+Para crear cada post, creo un archivo Markdown con el contenido deseado. Y finalmente, hice un script shell que toma el archivo Markdown, lo convierte a HTML, y luego toma el template y reemplaza el placeholder por el contenido del HTML generado. Parece complicado pero realmente no lo es. Serán 10 líneas de código, no las más elegantes, pero funciona.
 
 => gemini://texto-plano.xyz/iddqd404/media/screenshot-sh-script.png Captura de pantalla de nano editando el script shell
 
@@ -72,7 +72,7 @@ De momento con eso me alcanza.
 
 Sigo usando Syncthing pero no de forma contínua. Lo abro manualmente cuando hay algo para sincronizar, o cada cierto tiempo, "por las dudas".
 
-Al principio abría syncthing con el comando "syncthing", y esto hacía que se abriera también el navegador por defecto en la URL del admin, y me sobrecargaba todo. Luego descubrí el parámetro --no-browser, que es bastante auto-explicativo.
+Al principio lo abría con el comando "syncthing", y esto hacía que se abriera también el navegador por defecto (que en ese momento era Firefox o_O ) en la URL del admin, y casi me bloquea todo. Luego descubrí el parámetro --no-browser, que es bastante auto-explicativo.
 
 => gemini://texto-plano.xyz/iddqd404/media/screenshot-syncthing.png Captura de pantalla de Syncthing
 
@@ -97,7 +97,7 @@ Algo que funciona sorprendentemente muy bien es Gimp. Pensé que iba a ser pesad
 
 Youtube: Mision Imposible.
 
-Acceder a la web de Youtube es un suicidio, incluso en máquinas conn más recursos. No es que use mucho Youtube, realmente no lo hago, pero es un parámetro importante para medir la "utilidad" de una computadora para el común de los usuarios.
+Acceder a la web de Youtube es un suicidio, incluso en máquinas con más recursos. No es que use mucho Youtube, realmente no lo hago, pero es un parámetro importante para medir la "utilidad" de una computadora para el común de los usuarios.
 
 Intenté usar mpv y yt-dl para descargar versiones de baja calidad y reproducirlas en local, pero las versiones de yt-dl que pude hacer andar en mi versión de Slackware, ya no funcionan. No me sorprende, porque siempre fue una carrera entre gato y ratón, corriendo atrás de las complicaciones que mete Google para no permitir que se hagan esas cosas.
 
@@ -105,10 +105,10 @@ Por otro lado, Peertube, funciona perfecto. La web carga rápido y los videos ta
 
 => gemini://texto-plano.xyz/iddqd404/media/screenshot-peertube.png Captura de pantalla de Peertube
 
-Nuevamente el Fediverso demuestra ser el camino más sustentable y menos predatorio.
+Nuevamente el Fediverso demuestra ser el camino más sustentable e inclusivo, al menos tecnológicamente.
 
 ### Conclusiones
 
 Estoy muy contento con los resultados hasta el momento. Tengo muy pocos puntos débiles que me causan algún tipo de inconveniente, pero el objetivo nunca fue poder hacer absolutamente todo lo que uno hace en el día a día. Parte del desafío  también es darse cuenta de que hay cosas que damos por sentadas que en realidad son bastante excluyentes en cuanto a requerimientos y poder de cómputo.
 
-Cosas tan simples como deberían ser un webmail, o un gestor de contraseñas, resulta que pueden ser servicios o aplicaciones reocntra sobrecargadas, y esa sobrecarga ni siquiera aporta ningún valor más allá de lo estético.
+Cosas tan simples como deberían ser un webmail, o un gestor de contraseñas, resulta que pueden ser servicios o aplicaciones recontra sobrecargadas, y esa sobrecarga ni siquiera aporta ningún valor más allá de lo estético.
