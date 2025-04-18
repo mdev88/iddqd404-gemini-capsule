@@ -37,6 +37,8 @@ XNedit me gusta mucho, es muy liviano, tiene syntax highlighting y se siente có
 
 => gemini://texto-plano.xyz/iddqd404/media/screenshot-xnedit.png Captura de pantalla de XNedit editando este mismo post
 
+Algo que no pude resolver todavía (tampoco le dediqué mucho tiempo) es poder usar algún tipo de corrección ortográfica. XNedit no tiene, Ted tiene pero sólo en inglés... así que tengo que ver si puedo instalar los diccionarios o qué es lo que me falta configurar.
+
 ### Ver los cambios
 
 Como ya comenté varias veces, el navegador que mejor resultados me estuvo dando es Palemoon. Tanto para ver los cambios en local como cuando los subía, usé el modo incognito para ver la versión "real" y no una versión en caché, aunque sospecho que hay algún bug en ese modo, porque a pesar de abrir una ventana nueva en modo incognito, a veces seguía viendo una versión desactualizada.
@@ -63,11 +65,16 @@ Obviamente las últimas publicaciones de este gemlog las hice íntegramente desd
 
 De momento con eso me alcanza.
 
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-editar-gemlog.png Captura de pantalla del proceso de edición del gemlog
+
+
 ### Intercambio y sincronización de archivos
 
 Sigo usando Syncthing pero no de forma contínua. Lo abro manualmente cuando hay algo para sincronizar, o cada cierto tiempo, "por las dudas".
 
 Al principio abría syncthing con el comando "syncthing", y esto hacía que se abriera también el navegador por defecto en la URL del admin, y me sobrecargaba todo. Luego descubrí el parámetro --no-browser, que es bastante auto-explicativo.
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-syncthing.png Captura de pantalla de Syncthing
 
 También he usado ocasionalmente "scp" para pasar archivos específicos entre dos compus, porque es un comando que ya me sale naturalmente usar.
 
@@ -77,14 +84,31 @@ Protonmail es prácticamente inusable. La web es super pesada, y si quisiera usa
 
 Es por esto que estoy considerando seriamente migrar de Protonmail a Disroot. Estuve probando el webmail de Disroot y funciona significativamente mejor. No es una luz, pero es completamente usable, y además se puede usar por IMAP. 
 
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-disroot.png Captura de pantalla de Disroot
+
+### Editar imágenes
+
+Algo que funciona sorprendentemente muy bien es Gimp. Pensé que iba a ser pesado y lento pero al contrario, carga enseguida y se siente muy cómodo de usar.
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-gimp.png Captura de pantalla de Gimp
+
+
 ### Ver videos
 
 Youtube: Mision Imposible.
 
 Acceder a la web de Youtube es un suicidio, incluso en máquinas conn más recursos. No es que use mucho Youtube, realmente no lo hago, pero es un parámetro importante para medir la "utilidad" de una computadora para el común de los usuarios.
 
-Intenté usar mpv y yt-dl para descargar versiones de baja calidad y reproducirlas en local, pero la version de yt-dl que pude conseguir, ya no funcionan. No me sorprende, porque siempre fue una carrera entre gato y ratón, persiguiendo las complicaciones que mete Google para no permitir que se hagan esas cosas.
+Intenté usar mpv y yt-dl para descargar versiones de baja calidad y reproducirlas en local, pero las versiones de yt-dl que pude hacer andar en mi versión de Slackware, ya no funcionan. No me sorprende, porque siempre fue una carrera entre gato y ratón, corriendo atrás de las complicaciones que mete Google para no permitir que se hagan esas cosas.
 
 Por otro lado, Peertube, funciona perfecto. La web carga rápido y los videos también. 
 
 => gemini://texto-plano.xyz/iddqd404/media/screenshot-peertube.png Captura de pantalla de Peertube
+
+Nuevamente el Fediverso demuestra ser el camino más sustentable y menos predatorio.
+
+### Conclusiones
+
+Estoy muy contento con los resultados hasta el momento. Tengo muy pocos puntos débiles que me causan algún tipo de inconveniente, pero el objetivo nunca fue poder hacer absolutamente todo lo que uno hace en el día a día. Parte del desafío  también es darse cuenta de que hay cosas que damos por sentadas que en realidad son bastante excluyentes en cuanto a requerimientos y poder de cómputo.
+
+Cosas tan simples como deberían ser un webmail, o un gestor de contraseñas, resulta que pueden ser servicios o aplicaciones reocntra sobrecargadas, y esa sobrecarga ni siquiera aporta ningún valor más allá de lo estético.
