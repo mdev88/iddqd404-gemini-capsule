@@ -1,1 +1,90 @@
 # Desafío Retrocómputo - Usando la máquina
+
+Ya pasaron varios días desde que preparé la computadora lo mejor posible para poder llevar adelante las actividades que me propuse, y en ese tiempo estuve usándola para distintas cosas, algunas con éxito y otras no.
+
+Hace poco, decidí revivir un poco mi página web personal (www, no Gemini), y también migrar mi blog que estaba alojado en Bearblog a mi propio servidor, donde ya alojo mi web. Decidí hacer esta migración completamente desde el equipo del desafío.
+
+Entre las tareas que tuve que realizar, estuvieron:
+
+### Clonar un repositorio de Github
+
+Esto parece una pavada, pero tiene un inconveniente oculto. A menos que uno sepa la URL exacta del repositorio para poder hacer git clone <url>, hay que entrar a la página de dicho repositorio en GitHub y usar el botoncito ese que muestra la URL para clonar por ssh o por web (ya sé que uno puede memorizar el formato de la URL y armarla de esa forma, pero tengo cosas más importantes que hacer que eso). 
+La página de Github no se caracteriza por ser super liviana... y en mi caso, para colmo, era un repositorio privado, así que no me quedó otra alternativa más que abrir Palemoon, ir a Github, loguearme, pasar la 2FA, navegar al repositorio de mi web, descifrar la interfaz rota para obtener la URL del repositorio y finalmente clonarlo.
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-github.png Captura de pantalla de Github en Palemoon
+
+### Servidor web local
+
+Para poder ver los cambios rápidamente durante las modificaciones, sin tener que hacer push y luego pull desde el servidor, o copiar los archivos manualmente con scp, quería correr un servidor web local desde donde servir los archivos.
+
+Hace un tiempo me pasaron el tip de levantar un servidor web simple localmente con este comando de python:
+
+```
+python3 -m gttp.server
+```
+
+Corriendo ese comando en el directorio raíz de la web, puedo ver el sitio en vivo entrando a localhost:8000.
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-python-http.png Captura de pantalla de Palemoon mostrando un post, servido localmente
+
+### Editar archivos
+
+Para editar los distintos archivos, alterné entre nano en una terminal, y XNedit. No tuve un criterio muy claro, simplemente a veces estaba navegando entre carpetas en una terminal y necesitaba editar un archivo y lo hacía rápidamente desde nano. Otras veces necesitaba editar un archivo puntual y decidía abrirlo desde XNedit.
+
+A pesar de tener la configuración correcta (supuestamente) de XTerm para poder copiar y pegar texto desde y hacia la consola, no siempre me funciona, o no funciona del todo bien, así que en casos cuando necesito estar copiando bloques de código entre archivos, o desde alguna web, termino usando XNedit.
+
+XNedit me gusta mucho, es muy liviano, tiene syntax highlighting y se siente cómodo de usar. Algo que em di cuenta tarde, es que se pueden cambiar los colores y de alguna forma cambiarle el "tema" para hacerlo más amigable a la vista.
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-xnedit.png Captura de pantalla de XNedit editando este mismo post
+
+### Ver los cambios
+
+Como ya comenté varias veces, el navegador que mejor resultados me estuvo dando es Palemoon. Tanto para ver los cambios en local como cuando los subía, usé el modo incognito para ver la versión "real" y no una versión en caché, aunque sospecho que hay algún bug en ese modo, porque a pesar de abrir una ventana nueva en modo incognito, a veces seguía viendo una versión desactualizada.
+
+Cuando noté eso, lo que hice fue borrar manualmente los datos almacenados en el navegador antes de recargar la página y listo.
+
+### Programar
+
+Después de crear la sección del blog en mi sitio, quería alguna herramienta para facilitar la creación de los posts. Mi escenario ideal era poder redactar los posts en Markdown, y a la hora de publicar, convertirlos a HTML, siguiendo los estilos de mi web.
+
+Para eso, lo que hice fue crear un archivo HTML que sirva de "template" de un post, conteniendo las cabeceras y los estilos de mi sitio. En el cuerpo del archivo, donde iría el contenido del post propiamente dicho, puse un placeholder que llamé "post-content" (más adelante explico por qué).
+
+Para crear cada post, creo un archivo Markdown con el contenido deseado. Y finalmente, hice uns cript shell que toma el archivo Markdown, lo convierte a HTML, y luego toma el template y reemplaza el placeholder por el contenido del HTML generado. Parece complicado pero realmente no lo es. Serán 10 líneas de código, no las más elegantes, pero funciona.
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-sh-script.png Captura de pantalla de nano editando el script shell
+
+El resultado pueden verlo en la sección Blog de mi web:
+
+=> https://martinvukovic.com
+
+### Actualizar mi gemlog
+
+Obviamente las últimas publicaciones de este gemlog las hice íntegramente desde la compu del desafío. El proceso es virtualmente igual al de editar la web, sólo que no tengo un servidor gemini local como para previsualizar los cambios, así que simplemente voy subiendo los cambios "a producción".
+
+De momento con eso me alcanza.
+
+### Intercambio y sincronización de archivos
+
+Sigo usando Syncthing pero no de forma contínua. Lo abro manualmente cuando hay algo para sincronizar, o cada cierto tiempo, "por las dudas".
+
+Al principio abría syncthing con el comando "syncthing", y esto hacía que se abriera también el navegador por defecto en la URL del admin, y me sobrecargaba todo. Luego descubrí el parámetro --no-browser, que es bastante auto-explicativo.
+
+También he usado ocasionalmente "scp" para pasar archivos específicos entre dos compus, porque es un comando que ya me sale naturalmente usar.
+
+### Email
+
+Protonmail es prácticamente inusable. La web es super pesada, y si quisiera usar un cliente de mail para bajarlos en local, se necesita una aplicación de escritorio que hace de proxy para encriptar/desencriptar el tráfico. Para colmo, la posibilidad de usar esa opción para acceder al mail está reservada sólo para los usuarios Premium. Esa simple aplicación de escritorio requiere 2GB de memoria... jajaja... JAJAJAJAJA!!!
+
+Es por esto que estoy considerando seriamente migrar de Protonmail a Disroot. Estuve probando el webmail de Disroot y funciona significativamente mejor. No es una luz, pero es completamente usable, y además se puede usar por IMAP. 
+
+### Ver videos
+
+Youtube: Mision Imposible.
+
+Acceder a la web de Youtube es un suicidio, incluso en máquinas conn más recursos. No es que use mucho Youtube, realmente no lo hago, pero es un parámetro importante para medir la "utilidad" de una computadora para el común de los usuarios.
+
+Intenté usar mpv y yt-dl para descargar versiones de baja calidad y reproducirlas en local, pero la version de yt-dl que pude conseguir, ya no funcionan. No me sorprende, porque siempre fue una carrera entre gato y ratón, persiguiendo las complicaciones que mete Google para no permitir que se hagan esas cosas.
+
+Por otro lado, Peertube, funciona perfecto. La web carga rápido y los videos también. 
+
+=> gemini://texto-plano.xyz/iddqd404/media/screenshot-peertube.png Captura de pantalla de Peertube
