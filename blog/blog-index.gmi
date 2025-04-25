@@ -4,6 +4,7 @@ Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escri
 
 ## Publicaciones
 
+=> 2025/2025-04-25-desafio-retrocomputo-optimizaciones-extreme-edition.gmi 2025-04-25 Desafío Retrocómputo - Optimizaciones extreme edition
 => 2025/2025-04-18-desafio-retrocomputo-usando-la-maquina.gmi 2025-04-18 Desafío Retrocómputo - Usando la máquina
 => 2025/2025-04-12-desafio-retrocomputo-tweaks-y-tips.gmi 2025-04-12 Desafía Retrocómputo - Tweaks y tips
 => 2025/2025-04-10-desafio-retrocomputo-2025-primera-parte.gmi 2025-04-10 Desafío Retrocómputo 2025 - Primera parte
