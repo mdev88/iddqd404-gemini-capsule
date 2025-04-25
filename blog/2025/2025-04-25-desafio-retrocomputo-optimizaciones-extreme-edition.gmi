@@ -97,3 +97,5 @@ Entre otras cosas, hay otras recomendaciones generales que suelen circular por l
 * Deshabilitar servicios que se inician automáticamente en el arranque del sistema. En sistemas con Systemd eso se puede hacer temporalmente con el comando systemctl stop <nombre-de-servicio> y permanente cambiando "stop" por "disable". Yo ya me había ocupado de desactivar todo lo que sobraba, así que por ese lado no pude mejorar nada.
 
 * Deshabilitar aplicaciones y applets que se inician automáticamente al iniciar el entorno gráfico. Dependiendo del WM o DE que usen, tendrán que buscar el menú correspondiente para cambiar esto. En mi caso, jwm no tiene nada de eso. Lo que si puedo hacer es revisar el archivo .xinitrc y .jwmrc y reducir al mínimo las cosas que se cargan ahí. De nuevo, ambos archivos ya estaban al mínimo. Lo único que me doy el lujo de cargar es xmixer para tener el widget para controlar el volumen en la bandeja del sistema.
+
+Eso es todo por el momento. A seguir probando cosas...
