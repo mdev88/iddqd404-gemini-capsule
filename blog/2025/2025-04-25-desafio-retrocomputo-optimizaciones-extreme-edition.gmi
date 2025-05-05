@@ -1,0 +1,101 @@
+# Desafío Retrocómputo - Optimizaciones extreme edition
+
+Siguiendo con la búsqueda de optimizaciones para sacarle el máximo provecho a la computadora del desafío, me puse a probar cosas medio raras o no tan conocidas.
+
+# Deshabilitar mitigaciones
+
+En los últimos años fueron descubiertas una serie de vulnerabilidades en el diseño de una enorme cantidad de microprocesadores, cuyas mitigaciones, según leí en distintas fuentes, podía llegar a impactar en una reducción del rendimiento de más o menos un 30%.
+
+Si bien por regla general creo que mantener los equipos actualizados y bien parcheados, decidí poner mi vida, la de mi familia y la de mi gata en riesgo en nombre de la cienciia. Ya que todo esto es un experimento, y esta computadora no contiene nada crítico, me pareció que podía aprender algo útil con la experiencia.
+
+Spoiler: los resultados que obtuve fueron... poco concluyentes.
+
+Es muy probable que las herramientas que elegí no fueran del todo adecuadas, pero como sea, acá va:
+
+La metodología fue la siguiente:
+
+* Medir el rendimiento de distintos parámetros en estado "normal", es decir, con las mitigaciones por defecto del sistema.
+
+* Deshabilitar las mitigaciones y repetir las mediciones en las mismas condiciones y con las mismas herramientas.
+
+* Probar variaciones a ver si hay alguna diferencia.
+
+Para realizar benchmarks usé un programa llamado PassMark:
+
+=> https://www.passmark.com/products/pt_linux/index.php Web de PassMark
+
+Me pareció una buena opción porque ds un programa simple para terminal que hace varias pruebas tanto de CPU como de memoria, como para tener un abanico amplio de mediciones.
+
+Primero lo ejecuté con el sistema sin modificar, es decir, con las mitigaciones que vinieran por defecto, que seguramente incluyen las dos vulnerabilidades más conocidas y críticas: Spectre y Meltdown.
+
+Más abajo adjunto una imágen con una comparativa de todas las pruebas que hice.
+
+Luego, para desactivar todas las mitigaciones, hay que agregar un parámetro a la línea del kernel en el gestor de arranque, GRUB o LILO. Como en mi caso uso LILO, edité el archivo /etc/lilo.conf y agregué la siguiente línea:
+
+```
+append"mem=512,mitigations=off"
+```
+
+El parámetro mem=512 es bastante explicativo, es para forzar el uso de sólo 512Mb de memoria, que es lo que vengo usando en este equipo.
+
+Algo importante en este punto que en un principio me había pasado por alto, es que luego de editar lilo.conf hay que ejecutar "lilo" para que se apliquen los cambios, y reiniciar.
+
+Luego del arranque, repetí las mismas pruebas con todo exactamente igual. Dentro de X con jwm y una consola xterm, nada más.
+
+Registré los resultados y fui a hacer una tercera prueba, que no estoy seguro, pero creo que fue irrelevante.
+
+La prueba era probar el parámetro "nosmt" que es para deshabilitar Spectre y Meltdown específicamente, pero en combinación con mitigations=off entiendo que es redundante. En su momento no me di cuenta, y repetí todo el proceso, y guardé los resultados.
+
+En esta tabla muestro los resultados de las 3 pruebas lado a lado, indicando con una estrella los valores "ganadores".
+
+=> gemini://texto-plano.xyz/iddqd404/media/mitigations.png Tabla comparativa de las pruebas
+
+Como verán, los valores ganadores están bastante repartidos. No sé si se puede sacar alguna conclusión definitiva. Como decía antes, a lo mejor la herramienta que usé no fue la adecuada. 
+
+En principio si los resultados son correctos, entonces creo que no vale la pena deshabilitar las mitigaciones, porque en la mayoría de los casos daría la impresión de que la versión "parcheada" es la que mejor funciona.
+
+## Swapiness
+
+Existe un valor llamado Swapiness, que no pienso explicar, porque es sumamente complicado, pero anda circulando por ahí que se puede tunear el valor de swapiness para modificar la cantidad/frecuencia con la que se usa la swap, y de esa manera lograr algún tipo de mejora en el rendimiento.
+
+Este tip me lo pasó originalmente un colega de Hackfun que seguro quiere permanecer anónimo. Sólo voy a decir que se llama igual que yo y que usa una letra del nombre al revés.
+
+Investigando al respecto, descubrí que el tip original está basado en un entendimiento incorrecto de lo que realmente es swapiness, y para quienes estén interesadxs en leer un artículo largo y detallado al respecto, les recomiendo este:
+
+=> https://www.howtogeek.com/449691/what-is-swapiness-on-linux-and-how-to-change-it/ What is swapiness on Linux and how to change it
+
+En líneas generales, no hay una fórmula única y universal para saber qué valor conviene poner. Como recomendación general, se recomienda simplemente hacer prueba y error.
+
+En mi caso, decidí bajar el valor de 60 a 45, y probar el equipo durante un tiempo. Si noto alguna mejora, quizás lo baje un poco más, y si noto que empeoró, lo volveré a subir.
+
+De nuevo, no tengo conclusiones definitivas al respecto, pero al menos es un camino a explorar.
+
+Como en Slackware no tengo el comando sysctl, la forma de cambiar el valor de swapiness en runtime, es la siguiente:
+
+```
+echo 45 > /proc/sys/vm/swappiness
+```
+
+Esto cambia el valor y el efecto es inmediato.
+
+Para hacerlo permanente, debo crear el archivo /etc/sysctl.conf y agregar la siguiente línea:
+
+```
+vm.swappiness=45
+```
+
+## Menciones especiales
+
+Entre otras cosas, hay otras recomendaciones generales que suelen circular por las interwebs:
+
+* Deshabilitar add-ons del navegador. En mi caso puedo decir que con casi toda seguridad el que usaba yo para pasar las páginas a "modo oscuro" enlentecía bastante todo, así que lo terminé desactivando.
+
+* Deshabilitar Javascript. Es bastante obvio, porque quita carga de trabajo del lado del cliente, pero también perdemos funcionalidad al punto de que algunas páginas ni terminan de cargarse bien.
+
+* Usar un disco sólido: Duh! más vale que usar una memoria va a andar más rápido que un disquito que da vueltas. En mi compu tengo un disco mecánico old-school, "retro", "vintage". Un disco de mierda que en cualquier momento me deja a pata, pero es lo que hay. El día que me sobre un disco sólido se lo pondré.
+
+* Deshabilitar servicios que se inician automáticamente en el arranque del sistema. En sistemas con Systemd eso se puede hacer temporalmente con el comando systemctl stop <nombre-de-servicio> y permanente cambiando "stop" por "disable". Yo ya me había ocupado de desactivar todo lo que sobraba, así que por ese lado no pude mejorar nada.
+
+* Deshabilitar aplicaciones y applets que se inician automáticamente al iniciar el entorno gráfico. Dependiendo del WM o DE que usen, tendrán que buscar el menú correspondiente para cambiar esto. En mi caso, jwm no tiene nada de eso. Lo que si puedo hacer es revisar el archivo .xinitrc y .jwmrc y reducir al mínimo las cosas que se cargan ahí. De nuevo, ambos archivos ya estaban al mínimo. Lo único que me doy el lujo de cargar es xmixer para tener el widget para controlar el volumen en la bandeja del sistema.
+
+Eso es todo por el momento. A seguir probando cosas...
