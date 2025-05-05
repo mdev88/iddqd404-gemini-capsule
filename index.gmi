@@ -20,10 +20,6 @@ Soy un nerd autodidacta, argentino, pero ciudadano de Internet, a veces ansioso,
 ### Mastodon
 => https://rebel.ar/@martindehf @martindehf@rebel.ar
 
-### Email
-=> mailto:iddqd404@texto-plano.xyz iddqd404@texto-plano.xyz
-
-
 ## Gemlog
 
 Gemlog en español en donde escribo sobre lo que tenga en mente: tecnología, cocina, escritura de ficción, programación, self-hosting y cosas que encuentro en Internet. A veces me animo a publicar algunas cosas acá que no me animaría a publicar en las ultra transitadas aguas de la WWW.
@@ -36,7 +32,6 @@ Gemlog en español en donde escribo sobre lo que tenga en mente: tecnología, co
 Sitio en donde describo algunos de mis intereses, perfil profesional, blog, entre otras cosas.
 
 => https://martinvukovic.com Sitio personal
-=> https://texto-plano.xyz/~iddqd404 Sitio personal (espejo en texto-plano.xyz)
 
 
 ## Links recopilados
