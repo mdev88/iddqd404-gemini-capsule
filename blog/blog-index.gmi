@@ -4,6 +4,7 @@ Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escri
 
 ## Publicaciones
 
+=> 2025/2025-08-19-manjaro-rompe-grub.gmi 2025-08-19 Manjaro rompe GRUB
 => 2025/2025-06-16-legacypunk.gmi 2025-06-16 #Legacypunk
 => 2025/2025-04-25-desafio-retrocomputo-optimizaciones-extreme-edition.gmi 2025-04-25 Desafío Retrocómputo - Optimizaciones extreme edition
 => 2025/2025-04-18-desafio-retrocomputo-usando-la-maquina.gmi 2025-04-18 Desafío Retrocómputo - Usando la máquina

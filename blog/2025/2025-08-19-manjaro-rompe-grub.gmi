@@ -1,0 +1,41 @@
+# Manjaro rompe GRUB tras actualización
+
+Después de actualizar el sistema y reiniciar, me encontré con el error:
+
+"Error: grub_is_using_legacy_shim_lock_protocol not found"
+
+y el sistema no quiso bootear más.
+
+Buscando en Internet encontré que es debido a que luego de una actualización, era necesario ejecutar manualmente grub-install ANTES de reiniciar:
+
+=> https://forum.manjaro.org/t/get-a-black-screen-with-error-grub-is-using-legacy-shim-lock-protocol-not-found/180669
+
+Entonces la solución es bootear con un sistema Live, preferentemente de Manjaro, y hacer el famoso "manjaro-chroot"...
+
+... excepto que en mi caso no fue tan fácil.
+
+=> https://wiki.manjaro.org/index.php?title=GRUB/Restore_the_GRUB_Bootloader
+
+En el pasado he tenido que reinstalar grub de esta forma, pero en esta máquina la diferencia es que uso btrfs. Siguiendo los pasos de la Wiki, no funcionó, así que tuve que buscar en mil lugares los distintos errores que me fueron saliendo a lo largo de todo el proceso hasta que logré hacerlo funcionar.
+
+El paso a paso que seguí *en mi caso* es el siguiente:
+
+- Bootear desde USB seleccionando la opción que diga EFI
+
+- Hacerse root con `sudo -i`
+
+- Ejecutar "fdisk -l" para identificar el disco y particiones del sistema
+En mi caso tengo /dev/sda1 como EFI System y /dev/sda2 como Linux Filesystem (/ en mi caso). También tengo /dev/sda3 como Linux Swap, pero eso no se usa en este proceso.
+
+- Montar el subvolumen / ejecutando "mount -o subvol=@ /dev/sda2 /mnt"
+
+- Hacer chroot con "manjaro-chroot /mnt /bin/bash"
+
+- Montar el subvolumen efi con "mount /dev/sda1 /boot/efi"
+
+- Reinstalar grub con "grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=manjaro --recheck"
+
+- Actualizar la configuración de grub con "grub-mkconfig -o /boot/grub/grub.cfg"
+
+Espero que le haya ahorrado un rato de búsqueda en Internet y de prueba y error a alguien :)
+
