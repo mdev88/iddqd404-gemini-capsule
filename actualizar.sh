@@ -8,4 +8,4 @@ git add . && git commit -m "Auto-update" && git push
 echo ""
 
 echo "Accediendo al servidor..."
-txtplano.sh
+txtplano
