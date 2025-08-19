@@ -22,7 +22,7 @@ El paso a paso que seguí *en mi caso* es el siguiente:
 
 - Bootear desde USB seleccionando la opción que diga EFI
 
-- Hacerse root con `sudo -i`
+- Hacerse root con "sudo -i"
 
 - Ejecutar "fdisk -l" para identificar el disco y particiones del sistema
 En mi caso tengo /dev/sda1 como EFI System y /dev/sda2 como Linux Filesystem (/ en mi caso). También tengo /dev/sda3 como Linux Swap, pero eso no se usa en este proceso.
