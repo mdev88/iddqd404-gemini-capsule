@@ -1,38 +1,39 @@
-# Mi reciente incursión en las BBSs
+# Un año sin servicios de streaming
 
-A cada rato veía publicaciones y menciones al respecto, y me parecía una idea super interesante, pero por una razón u otra, nunca me conecté para ver de qué se trataba. 
+A finales de 2024 comencé a alojar en una Raspberry Pi 4 algunos servicios, entre ellos el servidor multimedia Jellyfin (escribí un poco al respecto en este gemlog). Como me gustó tanto cómo funcionaba, y como también empecé a alojar otros servicios también, decidí hacer un upgrade y montar un servidor en una computadora vieja pero potente corriendo Proxmox, un "servidor de servidores".
 
-Si bien tengo edad suficiente como para haber vivido el auge o por lo menos los últimos tiempos de las BBSs, no creo haberme conectado nunca a una. Mi verdadera incursión en el cyberespacio fue con Internet, a mediados de los 90.
+Si bien no tengo las fechas precisas a mano, puedo decir con bastante seguridad que el año 2025 fue el año en el que dejé atrás las plataformas de streaming.
 
-## The Vault BBS
+## Cine y series
 
-La semana pasada me puse a revisar links guardados y encontré una página que permitía conectarse directamente desde el navegador a The Vault BBS, una BBS gestionada por gente amiga de Cybercirujas, así que aproveché este método de conexión de mínima fricción para conectarme.
+Para cine y series usaba varios servicios distintos como Netflix, HBO Max, Amazon Prime, etc.
 
-Al entrar me recibieron hermosos gráficos ANSI a todo color, graffitis digitales que me remontaron a los archivos readme de los juegos pirateados que compraba en la Galería Rosario.
+Desde hace ya un tiempo siento un interés extremadamente limitado por las series. Salvo casos sumamente particulares, siento que estoy perdiendo demasiadas horas de mi vida en algo que no me aporta prácticamente nada. No tengo nada en contra de la pasividad o con buscar un escape, lo entiendo perfectamente, lo he hecho y lo sigo haciendo cuando lo necesito, sólo que en lo personal las series ya no me sirven en ese sentido, sino que al contrario, me disparan la ansiedad porque pienso que podría estar haciendo otra cosa.
 
-Me creé una cuenta en muy pocos pasos, y enseguida pude entrar. Hay un board con mensajes de una o dos líneas en donde la gente deja frases y pensamientos como en las paredes de un baño público, sólo que sin groserías berretas y gratuítas, y más saludos desde distintas partes del mundo y deseos de feliz fin de año.
+Algo parecido me pasa con las películas, pero en menor medida. Creo que una película dura un tiempo razonable para contar una historia, para hacerme pensar, influenciar mi estado de ánimo, y dejar una impresión valiosa en mí, por lo que ocasionalmente me gusta ver películas que según el momento que esté pasando "valgan la pena".
 
-Lo que más me gustó fue el chat MRC, que reconozco que no conocía, y que en un principio pensé que era un cliente de IRC, pero no, es otro protocolo, aunque bastante similar en sus opciones y en su uso.
+Como mi consumo de series y películas es bastante bajo, no tuve casi ningún problema en descargarme de antemano las cosas que podría llegar a querer ver, cargarlas en Jellyfin, fijarme que se vean bien y que los subtítulos cuadren correctamente.
 
-Entré al lobby y nada más entrar, alguien me felicitó por mi nombre de usuario: "Great handle! God mode!". Hell yeah dude, god mode. Debe ser la primera vez que alguien ve mi alias y capta la referencia al god mode de DOOM. Desde ahí siguió la conversación con algunas personas que estaban en la sala.
+Es breve tiempo y esfuerzo tomado de antemano compensa ampliamente la frustración de no encontrar aquello que tenía ganas de ver, o de enterarme de que además de la suscripción que pago también hay que pagar para poder verlo, o de pasar 45 minutos recorriendo la lista de películas disponibles sin elegir ninguna, o de la degradación en la calidad o los cortes en el streaming por culpa de problemas en mi conexión a Internetc, etc. 
 
-El vacío de las salas de IRC en todos los servidores que he estado visitando me venía trayendo un poco mal, haciéndome rememorar las épocas en las que entrar a cualquier canal con más de 20 personas era un flood descontrolado, pero por lo menos en esta sala, volví a sentir algo suficientemente parecido como para sentir que entraba en un lugar *vivo*.
+Comprobé gratamente que la época de los malos rips y los subtítulos mal sincronizados ya quedó en el olvido la inmensa mayoría de las veces. Jellyfin hace todo el trabajo por mi, y sólo una o dos veces tuve que intervenir manualmente.
 
-Conversé un rato con gente de Argentina y de otros lugares, todo en un tono sumamente amigable y educado, con preguntas de ida y de vuelta para conocer mejor al otro, invitaciones a visitar otras BBSs, participar de otras comunidades, y quedar para volver a charlar en otro momento.
+## Música
 
-Esto se volvió a repetir las otras dos veces que volví a entrar (esta vez ya usando una terminal como Doom Guy manda). Siempre hubo alguien con quien enseguida ponerme a conversar de algo diferente pero con el mismo nivel de fraternidad.
+Con respecto a la música, mi satisfacción es todavía mayor.
 
-Me llevo una excelente impresión de toda la experiencia. Quizás al retirarse de los espacios más accesibles y masivos, uno puede encontrar (todavía) a los mismos dinosaurios habitando esos espacios que nunca desaparecieron, sino que pasaron al fondo y un poco al olvido. 
+En el último tiempo que estuve usando Spotify, sentía que la calidad del streaming era cada vez peor, varias veces hubo discos o temas que tenía guardados que dejaron de estar disponibles o que nunca lo estuvieron, y el algoritmo de recomendación, que nunca me pareció bueno, estaba funcionando peor que nunca. Y ni hablar del bloat en las apps, los videos y shorts en loop, y la insistencia en mezclar la música con los podcasts.
 
-No digo que en estos espacios se encuentre la solución a los problemas de la Internet actual, porque estoy seguro de que deben sufrir los mismos o la misma cantidad de problemas que los demás espacios, pero al menos el volumen está más bajo, la gente está más chill, y uno puede conversar 1 a 1 y sentir algún tipo de conexión, aunque sea por un rato. Somos toda gente que extraña esa Internet de antes, y por esa añoranza compartida, la terminamos recreando de alguna forma.
+Las únicas ventajas que realmente veía en ese servicio eran la comodidad de poder buscar algo y escucharlo en el momento, y el recibir notificaciones sobre lanzamientos de artistas que me interesan.
 
-Definitivamente voy a volver a entrar a ver si la buena experiencia se vuelve algo consistente o si sólamente tuve suerte.
+Después de no mucho tiempo de cargar una discografía inicial en Jellyfin con todo lo "fundamental", me di cuenta enseguida de que esa facilidad para escuchar cualquier cosa en cualquier momento, era contraproducente para mi disfrute de la música.
 
-Acá pueden entrar a The Vault desde el navegador:
+Tener que buscar y descargar la música manualmente me hizo pensar más seriamente sobre las cosas que realmente me gustan. El tener una oferta más limitada y en algún sentido más "estática", también me hizo apreciar la música que escucho de otra manera. De la misma forma que cuando uno tiene su discografía en un medio físico, ese proceso de curar mi colección de música me hizo valorar mucho más lo que me gusta y desprenderme de cosas que sólamente tenía guardadas por inercia y por el gatillo fácil de hacer clic y tener (supuestamente) toda la música del mundo a mi alcance.
 
-=> https://epimundoblog.blogspot.com/p/the-vault-bbs.html
+Para seguir enterándome de los nuevos lanzamientos de mis artistas favoritos, empecé a usar muspy.com, una página que me permite elegir los artistas que quiero seguir, y recibir emails de notificación cuando se publiquen nuevos discos o singles. No necesito nada más que eso.
 
-Y acá tienen una guía sobre cómo configurar Syncterm para conectar directamente desde terminal:
+Pero quizás el cambio en la percepción y la experiencia de consumir contenido audiovisual más grande de todas, fue el darme cuenta de que escuchar música o ver películas volvía a ser un acto personal y privado. Y quiero invitar a todxs lxs lectorxs a detenerse un segundo a reflexionar un poco sobre esto último.
 
-=> https://epimundoblog.blogspot.com/p/tutorial-syncterm.html
+## Conclusión
 
+Después de una muy pequeña fricción inicial tras romper con la costumbre de lo conocido, y un período de adaptación a lo nuevo, puedo decir que no extraño en absoluto ninguna de los servicios que usaba. Lo que tengo ahora me ofrece todo lo que necesito, y no me hace sentir que necesito más. No hay tentaciones, recomendaciones que son publicidades encubiertas, música generada por IA, ni dark patterns. Simplemente elijo lo que quiero, y lo que quiero es lo único que tengo.

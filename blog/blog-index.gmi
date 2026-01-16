@@ -4,6 +4,7 @@ Gemlog donde escribo sobre lo que tenga en mente, sea tecnología, cocina, escri
 
 ## Publicaciones
 
+=> 2026/2026-01-16-anio-sin-streaming.gmi 2026-01-16 Un año sin servicios de streaming
 => 2026/2026-01-14-bbs.gmi 2026-01-14 Mi reciente incursión en las BBSs
 => 2025/2025-08-19-manjaro-rompe-grub.gmi 2025-08-19 Manjaro rompe GRUB
 => 2025/2025-06-16-legacypunk.gmi 2025-06-16 #Legacypunk
